@@ -1,0 +1,1947 @@
+{
+  "app": "OC资料库分享页",
+  "version": 1,
+  "exportedAt": "2026-07-09T03:59:24.352Z",
+  "characters": [
+    {
+      "id": "34d70e16-bbca-49a9-a6a0-e354c086de09",
+      "createdAt": 1783401722284,
+      "updatedAt": 1783558891158,
+      "name": "吴梓柠",
+      "status": "archived",
+      "tags": "薮猫面具",
+      "avatar": "images/avatar-9f38135af2b4.jpg",
+      "relationshipsNetwork": [
+        {
+          "id": "00061b3e-f3e3-4421-8427-e4f9b0a03a29",
+          "name": "卡库亚",
+          "type": "朋友",
+          "note": "冷面帅哥",
+          "createdAt": 1783422714551
+        },
+        {
+          "id": "34996d01-5e3c-4cab-b8cf-fe94877a82b0",
+          "name": "卢切斯",
+          "type": "挚友",
+          "note": "力气无比大的神奇女子一枚",
+          "createdAt": 1783420266693,
+          "updatedAt": 1783420893916
+        },
+        {
+          "id": "741c0780-5365-4d45-8907-6129b8791cfe",
+          "name": "Lancelot",
+          "type": "保镖？",
+          "note": "挚友与保镖，保护咱皇太子安全",
+          "createdAt": 1783420227599
+        }
+      ],
+      "activeVariantId": "ff8176c2-e24c-44f0-aa18-dce78322aa44",
+      "variants": [
+        {
+          "id": "78607a27-705e-4b5b-81e1-f017f34d061a",
+          "createdAt": 1783482699604,
+          "updatedAt": 1783487776139,
+          "variantName": "恶魔pa",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/78607a27-705e-4b5b-81e1-f017f34d061a-cover-2939b5772ae1.jpg",
+          "images": [
+            {
+              "id": "702b2c17-e501-4634-aafd-89c5ac8bc0c9",
+              "name": "异界公司企划(补充页.jpg",
+              "src": "images/.jpg-91790fafc0bd.jpg",
+              "caption": "",
+              "createdAt": 1783482716556
+            },
+            {
+              "id": "1b9d4d6f-e9cf-4dd4-8a65-44d6cac2e797",
+              "name": "异界公司企划.jpg",
+              "src": "images/78607a27-705e-4b5b-81e1-f017f34d061a-cover-2939b5772ae1.jpg",
+              "caption": "",
+              "createdAt": 1783482712950
+            }
+          ],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "bd6addc9-4b16-4e46-9297-8c4936a3c8a4",
+                "linkedCharacterId": "",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783482699721,
+                "updatedAt": 1783482699721
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "6f19e75e-03f7-4d69-8053-a70fb273ca31",
+          "createdAt": 1783482288254,
+          "updatedAt": 1783487777664,
+          "variantName": "杂图存档",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "4dd06b5d-86bb-47c1-91c3-c35160f130a3",
+                "linkedCharacterId": "",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783482288375,
+                "updatedAt": 1783482288375
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "e50959c7-862c-4ddb-89c5-c87970b2be3a",
+          "createdAt": 1783422278480,
+          "updatedAt": 1783487795532,
+          "variantName": "主线",
+          "world": "架空魔幻现实",
+          "summary": "真名：無\n常用人类姓名：吴梓柠\n英文正式身份名：Omnis\n英文人类姓名：Theodore Orpheus Knox\n日常英文简称：Theo Knox\n常用人类形态身高：175cm",
+          "age": "？？？",
+          "species": "原子",
+          "pronouns": "吴梓柠",
+          "role": "若即若离的存在",
+          "personality": "一、行为习惯\n·缺少人类式的善恶观，他不会自然地使用普通人的对错标准判断事物。他的核心思想带有虚无主义倾向，认为许多事情本身没有固定意义。\n· 行动通常由兴趣、观察欲、实验目的和局势需要推动，会把特定的人当作观察对象。他不会因为常规道德评价自动停止行动，所做的选择通常服务于观察、控制、试验或维持某种结构。\n·与人类交流时，他会主动模仿符合社会期待的价值观。\n·蓝瞳形态会尊重人类制定的道德与行为规范，这份尊重可以属于角色扮演、合作规则或主动选择。\n\n二、性格\n1. 外在表现（通常为红瞳）\n· 常表现得阳光、开朗、随意、有时吊儿郎当，说话带有漫不经心的玩笑感，会刻意营造出一种无所事事的印象。\n·喜欢被误会成只想看热闹的人，但他会主动使用这些表现降低他人的戒心。\n\n2. 真实状态\n·冷静、思考深入、观察力强、擅长长线计算、心机深。\n·很少完整暴露真实目的，大部分看似临时的行动，都已经经过推演，对局势拥有极强的控制欲。\n\n3. 试探习惯\n* 喜欢顺着他人的行动继续试探。\n* 别人试探他时，他会反向利用这一行为观察对方。\n* 他常让对方以为自己掌握了主动权。\n* 会通过提供选择、制造误判或放任行动，让对方逐渐走入他设计的局面。\n\n4. 控制方式\n·很少直接展示强硬命令式的控制， 更常使用温和、随意、漫不经心的方式施加影响，会调整环境、信息和选择范围。\n· 对方可能在很久以后才意识到自己一直受到引导。\n\n5. 不可预测性\n* 思维方式不遵循常规逻辑。\n* 很难仅凭前一次行动预测下一次选择。\n* 他会主动打破他人对自己的总结。\n* 也会利用他人已经形成的印象制造错误判断。\n\n6. 温柔状态（通常为蓝瞳）\n·会表现得非常温柔、安静、平和，这种状态可以持续很久。 外界无法准确判断其中有多少属于真实情感，有多少属于主动塑造的形象。\n\n7. 对刻板印象的运用\n·非常在意外表、行动和身份给他人留下的固定印象，会主动设计这些印象，瞳色、衣着、语气与行为模式都可以成为误导工具。\n·会长期维持某个角色，直到角色本身成为他人判断他的依据。",
+          "appearance": "一、人物外貌\n身高175cm，卷发。\n·外貌精致、漂亮，通常维持着干净完整的形象，他很在意自己的外貌，只是嘴上不会承认。\n·在正式场合会主动整理形象，以维持自己选择扮演的身份。这种外貌管理与他对“角色形象”的控制有关。\n\n2. 女性形态\n·女性形态身高约167cm，保留卷发特征。女性形态属于他能够改变身体结构与外观的表现之一。\n\n3. 纹身\n·左臂有花臂纹身，左锁骨位置有纹身。\n· 平时常穿能够遮住手臂的衣服， 他通常不会随意露出左臂，也很少主动解开衣领展示锁骨位置。\n\n4. 耳洞\n一共有七个耳洞，左耳四个， 右耳三个。\n\n5. 舌头与舌钉\n*（蓝瞳形态）舌头为蓝色。\n* 舌钉的位置很靠后，位于舌头中间偏后或接近舌根的位置。\n\n二、眼睛\n1. 蓝瞳形态\n* 外在表现更冷静、正经、可靠。\n* 整体气质更接近超然的观察者。\n* 说话和行动更加理性。\n* 会表现出对人类道德与行为准则的尊重。\n* 偶尔会认真处理自己的“正事”。\n* 蓝瞳状态更接近他通常隐藏起来的冷静状态。\n* 这种可靠感仍然可能包含引导、计算与伪装。\n\n2. 红瞳形态\n* 外在表现更加随意、吊儿郎当。\n* 更喜欢制造意外、混乱和认知偏差。\n* 常以看戏者或玩家的姿态进入局面。\n* 会顺势引导世界或人物走向他们自己造成的结局。\n* 他可能设置条件、诱导选择，然后观察人们如何落入结构之中。\n* 红瞳状态依然可以保持绝对冷静。\n\n3. 瞳色用途\n* 瞳色不对应他的真实情绪。 切换瞳色是他主动引导外界认知的手段。 \n* 他了解人们常见的刻板印象，例如红色代表危险、蓝色代表冷静。他会主动利用这些印象。\n* 他可以在红瞳时极度理性，也可以在蓝瞳时操纵局势或玩弄他人。\n\n4. 眼球结构\n* 眼睛没有常规意义上的瞳仁与虹膜。\n* 瞳孔区域与眼白的结构非常接近。\n* 角膜区域由流动的粒子构成空心圆形。\n* 眼内呈现出流动星空般的效果。\n* 注视他的眼睛时，会产生正在窥探某个深层空间或其他维度的感觉。\n\n三、原子环\n\n* 吴梓柠头顶存在双原子环。\n* 两枚环包含近似平行与约六十度倾斜的构成。\n* 原子环可以拆卸。\n* 原子环与他的真实存在及信息结构有关。\n* 原子环能够帮助统一外界对他的认知。\n* 任何存在触碰时都会受到信息洪流影响。\n\n四、武器\n1. 基本形态\n武器本身没有固定形态，最常使用的形态是长枪（外观同时具有长枪、法杖与时钟指针的特征，整体呈银色，枪身细长，重量较轻。）\n\n2. 核心功能\n\n* 武器本身不储存吴的力量。\n* 它属于力量转化器。\n* 能将超越世界规则的权能，转化成当前世界能够理解和承受的力量形式。\n* 攻击会因此符合所在世界的魔法、物理或战斗规则。\n* 武器能够降低他直接使用权能时对世界结构造成的破坏。\n\n3. 使用方式\n* 可以作为长枪进行刺击、挥砍和近战。\n* 可以作为法杖释放法术。\n* 能作为粒子操纵或权能转化的媒介。\n* 武器具有时间、规则与流动的象征意义。\n* 武器更深层的真实用途只由吴本人掌握。",
+          "backstory": "选取了多个具有未来观察可能的生物作为观察变量，同时",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "一、身体结构\n* 吴梓柠的身体属于无色透明流体暂时形成的结构。\n* 身体可以分解、重组、变化和重新塑形。\n* 他能够改变自己的外貌、体型和性别表现。\n* 受伤时流出的液体也是身体结构的一部分。\n* 他可以主动调整伤口的表现， 能够让伤口迅速恢复，也可以保留受伤状态或完全消除损伤痕迹。\n* 自愈能力很强。\n* 他无需依靠正常生理结构维持生命。\n* 普通意义上的失血不会造成死亡。\n* 他无法真正死亡。\n* 人类身体是他为了进入世界而维持的外壳与接口。\n身体能力\n\n* 身体能力很强。\n* 耐力与耐受力远高于普通人。\n* 常规人类很难通过体力消耗正面拖垮他。\n* 他对疼痛和身体刺激有很强的承受能力。\n* 身体敏感度可以与高耐受同时存在。\n* 亲密关系中，Lancelot很难单靠体力耗赢他。\n* Lancelot通常需要依靠技巧、节奏、引导和策略，让吴先出现疲惫或失去思考能力。\n\n二、血液与其他体液\n\n* 吴梓柠所谓的“血液”是一种无色透明流体。\n* 血、眼泪、汗液及其他体液，本质上都来自同一种流体。\n* 这些液体属于他存在形态的延展。\n* 他不依靠血液维持生命。\n* 流体可以作为承载他存在或变化的媒介。\n\n味道\n\n* 不同生物品尝这类流体时，会感受到自己理想中的美味。\n* 味道会根据接触者进行自适应调整。\n* 有人可能感到甜味，也可能感到其他符合个人喜好的味道。\n\n赋予能力\n\n* 他的流体可以永久强化其他生物。\n* 强化程度取决于对方的承载能力。\n* 接受流体的人可能获得巨大的能力提升。\n* 流体能够改变生物的本质结构。\n* 吴极少主动给予自己的流体。\n* 他只主动给过Lancelot一次。\n* 其他存在想得到这类流体，通常只能尝试抢夺。\n* 一般情况下很难成功取得。\n* Lancelot的神化与光之神体质，来源之一就是吴曾经给予的流体。\n\n三、权能体系\n\n吴梓柠的力量属于“权能”性质。\n\n* 权能不依赖肌肉、器官或常规身体结构。\n* 他不会通过身体感受到力量存量。\n* 他没有力量充盈、能量耗空之类的常规体感。\n* 权能更接近他与某种结构、规则或权限之间的连接。\n* 他可以“听见”并操纵这些结构。\n* 权能受到限制时，限制机制会切断他与力量之间的连接。\n* 这种限制不会在身体里产生力量消失的感觉。\n* 限制解除后，他也无法立刻从身体状态判断权能已经恢复。\n* 他需要主动尝试操纵，才会发现自己重新“听得到”或“能够操作”。\n* 因此，权能限制在外观上可能表现得像能力被彻底夺走， 权能本身仍然属于他。\n\n四、具体能力\n\n1. 粒子操控\n\n* 能够观察并操纵构成物质的粒子。\n* 可以改变粒子排列、运动、组合方式和状态。\n* 能够通过粒子层面的操作影响物质与生命。\n* 部分读心或信息判断能力，也可以通过粒子振动与状态变化实现。\n\n2. 物质分解与重组\n\n* 可以拆解物体、生命与自身身体，可以重新组合被拆解的结构，能够修复、重塑或改变物质。\n* 操作规模过大时存在失控风险。\n\n3. 世界结构改写\n\n* 可以将世界视作能够读取和编写的结构， 能够修改局部规则， 可以重组场景或世界结构。\n* 大规模改写会带来极高成本，他通常会克制使用这类能力。\n\n4. 时间效果\n\n* 能制造近似时间回溯、恢复或重现的效果。\n* 实现方式为重置或复现粒子状态。\n* 他可以让某一状态重新出现。\n* “刷新”“重现”属于该能力的常见表现。\n\n5. 信息读取\n\n* 能读取感知范围内生物的大量信息， 可以从物质、粒子、生命状态中获得情报， 具备接近全知的观察能力。\n* 信息量过大时会造成感知负担。\n\n6. 瞬移与位置变化\n\n* 能够通过重组或改变自身所在状态实现瞬移。\n* 也可以突然出现在其他地点。\n* 这种移动可以与分解、重现能力共同使用。\n\n7. 随机运动与误导\n\n* 能够利用粒子随机运动制造误导。\n* 可以干扰他人对攻击轨迹、位置和行为逻辑的判断。\n* 这类能力符合他习惯隐藏真实规律的行动方式。\n\n8. 读心相关能力\n\n* 可以根据粒子振动、生理反应、信息结构等读取思维或情绪。\n* 具体强度会随世界规则调整。\n* 在部分世界线中表现为直接读取信息。\n* 在受限制的世界中，可以表现为极强的观察与推演。\n\n五、权能与存在带来的负面影响\n\n1. 高攻低防\n\n* 破坏力极强，防御能力相对较低。\n* 攻击被打断或身体遭受直接伤害时，容易受伤。\n* 被压制时可能迅速陷入被动。\n* 强自愈与低防御可以同时存在。\n\n2. 出手成本极高\n\n* 他的攻击常涉及结构性改写。\n* 大规模使用容易破坏周围场景。\n* 严重时会影响整个世界的稳定结构。\n* 他必须长期克制力量使用。\n\n3. 世界规则排斥\n\n* 他的存在可能被世界视为违规对象，世界会尝试纠正、排斥或反噬他。\n* 反噬规模可能达到世界级，进入规则严密的世界时风险更高。\n\n4. 情绪失控导致能力暴走\n\n* 权能会受到情绪状态影响。\n* 情绪失控时，力量可能大范围泄露或暴走。\n* 他因此缺失负面情绪。\n\n5. 感知过载\n\n* 他能够读取的信息远超普通生物，过量信息会造成精神负荷。\n* 存在信息污染风险。\n* 严重时可能发生精神崩溃或认知异常。\n\n6. 无法与世界真正共鸣\n\n* 他的构成方式超出常规世界结构。\n* 他很难与普通生命形成完全相同的感知和共鸣。\n* 长期处于观察者的位置。\n* 孤独属于其存在方式带来的固定代价。\n\n7. 无法死亡\n\n* 他不会真正死亡。\n* 疼痛与负面体验无法通过死亡终止。\n* 极端痛苦可能被无限延长。\n* 所有损伤和经历最终都需要由他继续承受。",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "5a62d461-69d2-49a7-af6d-cf8bcfbd8684",
+                "linkedCharacterId": "34d70e16-bbca-49a9-a6a0-e354c086de09",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "7561df50-d7a5-4560-9cfd-c4eb9187a6fa",
+          "createdAt": 1783420677566,
+          "updatedAt": 1783491716507,
+          "variantName": "FR偶像企",
+          "world": "架空现代",
+          "summary": "",
+          "age": "19/",
+          "species": "待出道偶像",
+          "pronouns": "",
+          "role": "练习生",
+          "personality": "家境优渥，但是为人内向有些敏感",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/7561df50-d7a5-4560-9cfd-c4eb9187a6fa-cover-dcce27ebe6a2.jpg",
+          "images": [
+            {
+              "id": "5e8b420d-febf-4a62-8f7e-fc42ac5879cb",
+              "name": "FR企吴梓柠2.jpg",
+              "src": "images/FR-2.jpg-e254fcd96f75.jpg",
+              "caption": "",
+              "createdAt": 1783482734327
+            },
+            {
+              "id": "f85b4a13-5c14-4913-89da-23b7cae77607",
+              "name": "FR企吴梓柠.jpg",
+              "src": "images/7561df50-d7a5-4560-9cfd-c4eb9187a6fa-cover-dcce27ebe6a2.jpg",
+              "caption": "",
+              "createdAt": 1783420701706
+            }
+          ],
+          "timeline": [
+            {
+              "id": "354180c8-410c-453e-b2b2-1725a569d490",
+              "era": "一公",
+              "title": "一公舞台，初次与大家竞争",
+              "type": "演出",
+              "description": "与队友快乐的合作",
+              "color": "#167c80",
+              "links": [
+                {
+                  "type": "comic",
+                  "id": "c5ca40bb-29c9-4b41-8175-9af6ac14895d"
+                }
+              ],
+              "createdAt": 1783484905159,
+              "updatedAt": 1783484905159
+            }
+          ],
+          "comics": [
+            {
+              "id": "e80eb30f-a654-4ea5-9b6b-7f465f087736",
+              "title": "舞台前的活动",
+              "synopsis": "os大家都好厉害，好怕我发挥不好",
+              "pages": [
+                {
+                  "id": "99dc8001-0cbc-4817-85bd-cf18f7a32d7d",
+                  "name": "FR活动2漫画p1.jpg",
+                  "src": "images/FR-2-p1.jpg-1b3928c6fb04.jpg",
+                  "caption": "",
+                  "createdAt": 1783485175623
+                },
+                {
+                  "id": "20565603-937c-4e23-b797-a9d02786276d",
+                  "name": "FR活动2漫画p2.jpg",
+                  "src": "images/FR-2-p2.jpg-618d3c4f7072.jpg",
+                  "caption": "",
+                  "createdAt": 1783485187638
+                },
+                {
+                  "id": "f90e7ea1-e018-44db-9b48-4280b99d81da",
+                  "name": "FR活动2漫画p3.jpg",
+                  "src": "images/FR-2-p3.jpg-494e4b8e11e3.jpg",
+                  "caption": "",
+                  "createdAt": 1783485175685
+                },
+                {
+                  "id": "b42bffdf-5607-41d3-87f3-9b25d4822501",
+                  "name": "FR活动2漫画p4.jpg",
+                  "src": "images/FR-2-p4.jpg-e9bbf81c2f68.jpg",
+                  "caption": "",
+                  "createdAt": 1783485195391
+                },
+                {
+                  "id": "e582d286-433f-4039-ba79-2648d1206e0d",
+                  "name": "FR活动2漫画p5.jpg",
+                  "src": "images/FR-2-p5.jpg-5f186a23821b.jpg",
+                  "caption": "",
+                  "createdAt": 1783485199456
+                },
+                {
+                  "id": "8cab6069-2049-4985-bb95-8e4cedcbd413",
+                  "name": "FR活动2漫画p6.jpg",
+                  "src": "images/FR-2-p6.jpg-5f4fa960b928.jpg",
+                  "caption": "",
+                  "createdAt": 1783485200917
+                }
+              ],
+              "createdAt": 1783485233148
+            },
+            {
+              "id": "7c9aab2e-7fb6-49a2-852a-04c8f488435b",
+              "title": "二公舞台（麻花）",
+              "synopsis": "队内战争，吓死人了！",
+              "pages": [
+                {
+                  "id": "348c78b1-9c0a-4e23-9a36-30c3fe8e1e0b",
+                  "name": "FR二公队友1.jpg",
+                  "src": "images/FR-1.jpg-088e897a57c3.jpg",
+                  "caption": "",
+                  "createdAt": 1783484665974
+                },
+                {
+                  "id": "af064bbd-ac7e-4870-9942-fa8ae3ebab3c",
+                  "name": "FR二公队友2.jpg",
+                  "src": "images/FR-2.jpg-7880df3f502d.jpg",
+                  "caption": "",
+                  "createdAt": 1783484667959
+                },
+                {
+                  "id": "e0510cc7-86c9-48fc-b6ea-9c5712d2279d",
+                  "name": "FR二公1.jpg",
+                  "src": "images/FR-1.jpg-81d5fb96e2f1.jpg",
+                  "caption": "",
+                  "createdAt": 1783484657934
+                },
+                {
+                  "id": "a8f68523-3159-45f3-b543-d3857ca6f7e6",
+                  "name": "FR二公2.jpg",
+                  "src": "images/FR-2.jpg-787c73be75a7.jpg",
+                  "caption": "",
+                  "createdAt": 1783484661227
+                }
+              ],
+              "createdAt": 1783484820039
+            },
+            {
+              "id": "767e6148-4e6f-4e60-9347-d0062454358e",
+              "title": "三公",
+              "synopsis": "被女神私联了嘿嘿嘿",
+              "pages": [
+                {
+                  "id": "aa380fd5-b52a-4bb8-a171-aa923598b983",
+                  "name": "FR三公服装.jpg",
+                  "src": "images/FR-.jpg-3be3eca71652.jpg",
+                  "caption": "",
+                  "createdAt": 1783484419309
+                },
+                {
+                  "id": "38683f1e-70b1-480b-bc91-fd932072e30f",
+                  "name": "FR三公拼贴.jpg",
+                  "src": "images/FR-.jpg-1c62851f3585.jpg",
+                  "caption": "",
+                  "createdAt": 1783484477409
+                },
+                {
+                  "id": "5d9942b3-4e97-47be-8329-6c59e9dcc14b",
+                  "name": "三公插图.jpg",
+                  "src": "images/.jpg-4e2a30d28abb.jpg",
+                  "caption": "",
+                  "createdAt": 1783484482959
+                }
+              ],
+              "createdAt": 1783484490308
+            },
+            {
+              "id": "c5ca40bb-29c9-4b41-8175-9af6ac14895d",
+              "title": "一公",
+              "synopsis": "与",
+              "pages": [
+                {
+                  "id": "a98acc00-f6e8-4a8d-a3de-0cd2b5e77b2a",
+                  "name": "FR企活动1打卡1.jpg",
+                  "src": "images/FR-1-1.jpg-b68ea24f44f6.jpg",
+                  "caption": "",
+                  "createdAt": 1783482932351
+                },
+                {
+                  "id": "e885bd36-cf61-4578-be43-5373710782b9",
+                  "name": "FR企活动1打卡2.jpg",
+                  "src": "images/FR-1-2.jpg-adb4195d0596.jpg",
+                  "caption": "",
+                  "createdAt": 1783482927501
+                },
+                {
+                  "id": "0c2e9197-7aec-4589-88a1-9d2f46665961",
+                  "name": "FR企活动1打卡3,4拼.jpg",
+                  "src": "images/FR-1-3-4-.jpg-3e49757b2ab9.jpg",
+                  "caption": "",
+                  "createdAt": 1783482946333
+                }
+              ],
+              "createdAt": 1783482976269
+            }
+          ],
+          "illustrations": [
+            {
+              "id": "272db70b-78a3-4dbd-b2de-b7e90d91ab3d",
+              "name": "FR活动2漫画扉页.jpg",
+              "src": "images/FR-2-.jpg-bcd6f5711970.jpg",
+              "caption": "",
+              "createdAt": 1783485325250
+            },
+            {
+              "id": "a82b5c34-2460-4b5d-85e5-50788e7dfc34",
+              "name": "FR二公麦麸2.jpg",
+              "src": "images/FR-2.jpg-e9f9ecef3056.jpg",
+              "caption": "FR二公麦麸2",
+              "createdAt": 1783484622544
+            },
+            {
+              "id": "f733ed88-cb6a-422f-9340-084799aec68c",
+              "name": "FR二公麦麸1.jpg",
+              "src": "images/FR-1.jpg-958bb8189101.jpg",
+              "caption": "FR二公麦麸1",
+              "createdAt": 1783484591789
+            },
+            {
+              "id": "0557ce36-7d7d-4b73-83af-eb69fea5d6fe",
+              "name": "FR活动2摸鱼页.jpg",
+              "src": "images/FR-2-.jpg-7703930e106f.jpg",
+              "caption": "FR活动2摸鱼页",
+              "createdAt": 1783483159043
+            },
+            {
+              "id": "d6a53975-2063-4bfb-9232-e1f1a381b4bd",
+              "name": "FR一些喜欢的.jpg",
+              "src": "images/FR-.jpg-144877d7040e.jpg",
+              "caption": "FR一些喜欢的",
+              "createdAt": 1783483112148
+            }
+          ],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "ac081288-c46b-4954-a5e5-ada00260bda5",
+                "linkedCharacterId": "34d70e16-bbca-49a9-a6a0-e354c086de09",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              },
+              {
+                "id": "8269d428-4658-4d3b-bbd9-f4fbbf0aef6e",
+                "linkedCharacterId": "",
+                "name": "苏禧",
+                "type": "二公队友",
+                "color": "#c4bc00",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783482842683,
+                "updatedAt": 1783482852729
+              }
+            ],
+            "edges": [
+              {
+                "id": "819f828a-ad06-4e66-aea2-f3862232be60",
+                "from": "ac081288-c46b-4954-a5e5-ada00260bda5",
+                "to": "8269d428-4658-4d3b-bbd9-f4fbbf0aef6e",
+                "label": "耀眼的黄毛",
+                "reverseLabel": "",
+                "note": "很好的队友，黄毛，光明的家伙，让梓柠感觉暖暖的，还想再遇见",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783482905470,
+                "updatedAt": 1783484560353
+              }
+            ],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "f9450d20-d6f0-4b11-a43a-1338f04a3e62",
+          "createdAt": 1783420671969,
+          "updatedAt": 1783491717498,
+          "variantName": "乐队",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/f9450d20-d6f0-4b11-a43a-1338f04a3e62-cover-b637db2e17b2.jpg",
+          "images": [
+            {
+              "id": "96ea8d2e-523a-4fc1-8816-89c07da4f973",
+              "name": "bFrom乐队企.jpg",
+              "src": "images/f9450d20-d6f0-4b11-a43a-1338f04a3e62-cover-b637db2e17b2.jpg",
+              "caption": "",
+              "createdAt": 1783482355061
+            }
+          ],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [
+            {
+              "id": "aea1df03-c97d-4e6a-91a5-16ff4bc7a086",
+              "name": "Bfrom企企u存档.jpg",
+              "src": "images/Bfrom-u-.jpg-7eae1798f4c8.jpg",
+              "caption": "企u",
+              "createdAt": 1783482362884
+            }
+          ],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "e516d692-458a-4875-b754-4f27137f4a44",
+                "linkedCharacterId": "34d70e16-bbca-49a9-a6a0-e354c086de09",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              },
+              {
+                "id": "dfe17644-2dff-40e1-9c43-34611ad3ae08",
+                "linkedCharacterId": "",
+                "name": "千智宇",
+                "type": "前乐队队友",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783482432082,
+                "updatedAt": 1783482432082
+              },
+              {
+                "id": "1f18e485-e2f5-4dbd-9614-2d5053382808",
+                "linkedCharacterId": "",
+                "name": "狮子座机",
+                "type": "前乐队队长",
+                "color": "#f5ec00",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783482541722,
+                "updatedAt": 1783482541722
+              }
+            ],
+            "edges": [
+              {
+                "id": "e675a8ac-eadf-47a1-991e-15a467ee4a65",
+                "from": "e516d692-458a-4875-b754-4f27137f4a44",
+                "to": "dfe17644-2dff-40e1-9c43-34611ad3ae08",
+                "label": "前乐队队友",
+                "reverseLabel": "",
+                "note": "千智宇性格敏感内向，讨厌过于积极的队长，受不了于是离开",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783482502414,
+                "updatedAt": 1783482502414
+              },
+              {
+                "id": "84d9368a-33d5-453d-b758-d036b1cebd1c",
+                "from": "e516d692-458a-4875-b754-4f27137f4a44",
+                "to": "1f18e485-e2f5-4dbd-9614-2d5053382808",
+                "label": "前乐队队长",
+                "reverseLabel": "",
+                "note": "因为队友的离开，乐队解散",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783482605562,
+                "updatedAt": 1783482605562
+              },
+              {
+                "id": "356a8570-9f0a-43ad-8ae0-8e39420e1f1d",
+                "from": "1f18e485-e2f5-4dbd-9614-2d5053382808",
+                "to": "dfe17644-2dff-40e1-9c43-34611ad3ae08",
+                "label": "前乐队队友",
+                "reverseLabel": "",
+                "note": "",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783482655264,
+                "updatedAt": 1783482655264
+              }
+            ],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "aee67a6e-9d72-4799-a001-471e721c1675",
+          "createdAt": 1783420288064,
+          "updatedAt": 1783484301292,
+          "variantName": "ABO",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "4854f5a9-5019-4f6d-b3d1-4e8a3c2ef5ba",
+                "linkedCharacterId": "",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              },
+              {
+                "id": "2bb67058-c3ca-47f6-b46e-a088dca7436b",
+                "linkedCharacterId": "",
+                "name": "卡库亚",
+                "type": "朋友",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783422714551,
+                "updatedAt": 1783422714551
+              },
+              {
+                "id": "235c4100-71e2-4c36-bff1-6c20db70491e",
+                "linkedCharacterId": "",
+                "name": "卢切斯",
+                "type": "挚友",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783420266693,
+                "updatedAt": 1783420266693
+              },
+              {
+                "id": "8bb8830f-635a-4b7b-8875-f0954c685e9d",
+                "linkedCharacterId": "",
+                "name": "Lancelot",
+                "type": "保镖？",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783420227599,
+                "updatedAt": 1783420227599
+              }
+            ],
+            "edges": [
+              {
+                "id": "00061b3e-f3e3-4421-8427-e4f9b0a03a29",
+                "from": "4854f5a9-5019-4f6d-b3d1-4e8a3c2ef5ba",
+                "to": "2bb67058-c3ca-47f6-b46e-a088dca7436b",
+                "label": "朋友",
+                "reverseLabel": "",
+                "note": "冷面帅哥",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783422714551,
+                "updatedAt": 1783422714551
+              },
+              {
+                "id": "34996d01-5e3c-4cab-b8cf-fe94877a82b0",
+                "from": "4854f5a9-5019-4f6d-b3d1-4e8a3c2ef5ba",
+                "to": "235c4100-71e2-4c36-bff1-6c20db70491e",
+                "label": "挚友",
+                "reverseLabel": "",
+                "note": "力气无比大的神奇女子一枚",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783420266693,
+                "updatedAt": 1783420266693
+              },
+              {
+                "id": "741c0780-5365-4d45-8907-6129b8791cfe",
+                "from": "4854f5a9-5019-4f6d-b3d1-4e8a3c2ef5ba",
+                "to": "8bb8830f-635a-4b7b-8875-f0954c685e9d",
+                "label": "保镖？",
+                "reverseLabel": "",
+                "note": "挚友与保镖，保护咱皇太子安全",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783420227599,
+                "updatedAt": 1783420227599
+              }
+            ],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "ff8176c2-e24c-44f0-aa18-dce78322aa44",
+          "createdAt": 1783403599047,
+          "updatedAt": 1783558891158,
+          "variantName": "暗潮企划",
+          "world": "黑手党",
+          "summary": "名字：朱利亚诺·徳诺姆布拉",
+          "age": "19岁",
+          "species": "加利亚诺",
+          "pronouns": "薮猫",
+          "role": "侦查师",
+          "personality": "冷淡，喜欢独来独往",
+          "appearance": "175cm卷毛男子",
+          "backstory": "小时候被挂辣椒",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "雪茄只是画画的装饰，实际不是很爱抽烟的",
+          "cover": "images/ff8176c2-e24c-44f0-aa18-dce78322aa44-cover-0e002ec6d083.jpg",
+          "images": [
+            {
+              "id": "8eae39f3-ee86-49e7-b9d8-3a8abde92f27",
+              "name": "暗潮-人设补充页.jpg",
+              "src": "images/.jpg-90229adfcf91.jpg",
+              "caption": "补充",
+              "createdAt": 1783420805643
+            },
+            {
+              "id": "2e42d4f3-e164-4466-9771-110d3ef4d2eb",
+              "name": "image.jpeg",
+              "src": "images/image.jpeg-f81304995bb2.jpg",
+              "caption": "角色介绍",
+              "createdAt": 1783403817496
+            },
+            {
+              "id": "1aa425de-71a5-4f93-b1e4-1fe31cef9d83",
+              "name": "暗潮-人设封面.jpg",
+              "src": "images/ff8176c2-e24c-44f0-aa18-dce78322aa44-cover-0e002ec6d083.jpg",
+              "caption": "封面",
+              "createdAt": 1783403719865
+            }
+          ],
+          "timeline": [
+            {
+              "id": "c44d829a-d626-4792-b69f-2e2c37198b43",
+              "era": "第一章",
+              "title": "偷发财树",
+              "type": "章节任务",
+              "description": "与小井、Lancelot一起潜入一个慌乱的拍卖会偷发财树\n朱利亚诺负责吸引小井注意，Lan正在思考这发财树真的要这样拿走吗",
+              "color": "#167c80",
+              "links": [
+                {
+                  "type": "illustration",
+                  "id": "beb00906-a38d-4507-8e39-0b6af1ffb63f"
+                }
+              ],
+              "createdAt": 1783471351006,
+              "updatedAt": 1783481704680
+            },
+            {
+              "id": "b779be67-c864-4eb5-b485-eb430274df76",
+              "era": "第二章",
+              "title": "章节任务",
+              "type": "探险",
+              "description": "神奇的，会说出秘密的罐头……",
+              "color": "#167c80",
+              "links": [
+                {
+                  "type": "illustration",
+                  "id": "85a6af25-9c7d-44fa-a376-c3108c691fee"
+                },
+                {
+                  "type": "comic",
+                  "id": "97b78a92-ade3-4ce1-ae10-11bb30cafd0a"
+                }
+              ],
+              "createdAt": 1783477295620,
+              "updatedAt": 1783481798943
+            },
+            {
+              "id": "fe28d689-8c08-4fcf-b88e-897ded8c5f36",
+              "era": "第三章",
+              "title": "“预知”水晶",
+              "type": "在神秘的水晶溶洞中……",
+              "description": "我们一起探险，在同一面镜子中看到了不同的事情……",
+              "color": "#167c80",
+              "links": [
+                {
+                  "type": "comic",
+                  "id": "a859fdd6-2df4-4f10-b7ed-a247c7009a8f"
+                }
+              ],
+              "createdAt": 1783481904111,
+              "updatedAt": 1783481904111
+            },
+            {
+              "id": "ab613ded-4d2c-4974-b20e-95dfb990e721",
+              "era": "第四章",
+              "title": "探险",
+              "type": "抽签决定自己会变成什么",
+              "description": "大家都变成了奇怪的东西",
+              "color": "#167c80",
+              "links": [
+                {
+                  "type": "comic",
+                  "id": "8ca42445-817e-4d76-9b58-4a1850cbb47f"
+                },
+                {
+                  "type": "comic",
+                  "id": "32680e11-be89-4c66-a807-6411f7a27b31"
+                }
+              ],
+              "createdAt": 1783477577706,
+              "updatedAt": 1783477577706
+            }
+          ],
+          "comics": [
+            {
+              "id": "a859fdd6-2df4-4f10-b7ed-a247c7009a8f",
+              "title": "“预知”水晶（麻花）",
+              "synopsis": "水晶中我怎么好像有点不活了",
+              "pages": [
+                {
+                  "id": "1d7e1ada-c4e8-45e6-88e0-4a608c38a9c0",
+                  "name": "暗潮水晶镜.jpg",
+                  "src": "images/.jpg-4fbc46274be4.jpg",
+                  "caption": "",
+                  "createdAt": 1783477406138
+                },
+                {
+                  "id": "6fa31e0f-a985-4978-bf23-912184d5c5a8",
+                  "name": "暗潮分心.jpg",
+                  "src": "images/.jpg-80b3fd9f4477.jpg",
+                  "caption": "",
+                  "createdAt": 1783477433920
+                }
+              ],
+              "createdAt": 1783477478774
+            },
+            {
+              "id": "97b78a92-ade3-4ce1-ae10-11bb30cafd0a",
+              "title": "罐头探险（木刀）",
+              "synopsis": "有趣有趣",
+              "pages": [
+                {
+                  "id": "7d0b2692-589f-4785-bd76-c6f407509503",
+                  "name": "8d7be6e86078d25433cdc5d5614a5d67.png",
+                  "src": "images/8d7be6e86078d25433cdc5d5614a5d67.png-55bff2ea623b.png",
+                  "caption": "",
+                  "createdAt": 1783421060056
+                },
+                {
+                  "id": "98876b0f-a335-427e-b347-0c09ae817827",
+                  "name": "3d47e41cc1a119aec5c35160314c72e6.png",
+                  "src": "images/3d47e41cc1a119aec5c35160314c72e6.png-7f01f408b4ec.png",
+                  "caption": "",
+                  "createdAt": 1783421063080
+                },
+                {
+                  "id": "230f067c-3bad-4ea2-b1cf-b33039a7b8b7",
+                  "name": "10070cce151418390686b8242507f9df.png",
+                  "src": "images/10070cce151418390686b8242507f9df.png-8cec48abb71c.png",
+                  "caption": "",
+                  "createdAt": 1783421064944
+                }
+              ],
+              "createdAt": 1783421097238
+            },
+            {
+              "id": "8ca42445-817e-4d76-9b58-4a1850cbb47f",
+              "title": "变成波比了？！（木刀）",
+              "synopsis": "有趣的墙",
+              "pages": [
+                {
+                  "id": "2757b311-f8d3-41ce-8ab3-14c4079e7d63",
+                  "name": "d643d75bf429835ec95619255fca8521.png",
+                  "src": "images/d643d75bf429835ec95619255fca8521.png-dc2a009a546b.png",
+                  "caption": "",
+                  "createdAt": 1783420994886
+                },
+                {
+                  "id": "ca06d9b6-399b-48fc-8e74-22e15897b3ce",
+                  "name": "ce85162e716052b226294438098e778c.png",
+                  "src": "images/ce85162e716052b226294438098e778c.png-d82e84dc3c2a.png",
+                  "caption": "",
+                  "createdAt": 1783420994811
+                },
+                {
+                  "id": "e6edc8db-1fdd-47af-8b8e-419642179264",
+                  "name": "430fc50274fcd1811520cf62919ab032.png",
+                  "src": "images/430fc50274fcd1811520cf62919ab032.png-868874e16ced.png",
+                  "caption": "",
+                  "createdAt": 1783420994730
+                }
+              ],
+              "createdAt": 1783421020850
+            },
+            {
+              "id": "32680e11-be89-4c66-a807-6411f7a27b31",
+              "title": "变成波比了？！（麻花）",
+              "synopsis": "奇怪的地方，大家都变成了奇怪的玩意儿",
+              "pages": [
+                {
+                  "id": "2775b001-a454-4e6a-a579-e1b52180f639",
+                  "name": "封面.png",
+                  "src": "images/.png-93d16f3b902f.png",
+                  "caption": "",
+                  "createdAt": 1783420148693
+                },
+                {
+                  "id": "f4ecfcae-dab4-4143-a015-57cf07ed8dd6",
+                  "name": "暗潮终章漫画p1.jpg",
+                  "src": "images/p1.jpg-296ed039fd19.jpg",
+                  "caption": "",
+                  "createdAt": 1783420154581
+                },
+                {
+                  "id": "1641e94f-3e6e-4e44-8084-556fffa90d94",
+                  "name": "暗潮终章漫画p2.jpg",
+                  "src": "images/p2.jpg-c9cef2292c08.jpg",
+                  "caption": "",
+                  "createdAt": 1783420154767
+                },
+                {
+                  "id": "9774159f-49d7-451c-95eb-9ad09ddacffd",
+                  "name": "暗潮终章漫画p3.jpg",
+                  "src": "images/p3.jpg-33f373715266.jpg",
+                  "caption": "",
+                  "createdAt": 1783420154915
+                },
+                {
+                  "id": "d7047c5c-80d6-4761-b100-e0818fa676f8",
+                  "name": "暗潮终章漫画p4.jpg",
+                  "src": "images/p4.jpg-526e9d139696.jpg",
+                  "caption": "",
+                  "createdAt": 1783420155087
+                },
+                {
+                  "id": "6b7048f2-f26b-4701-9d17-ad530b85b6e3",
+                  "name": "暗潮终章漫画p5.jpg",
+                  "src": "images/p5.jpg-5868d1dfae66.jpg",
+                  "caption": "",
+                  "createdAt": 1783420155284
+                },
+                {
+                  "id": "b706c60c-a453-4f9c-bb72-b5e6fd36efe1",
+                  "name": "暗潮终章间页.jpg",
+                  "src": "images/.jpg-6c24a096612a.jpg",
+                  "caption": "",
+                  "createdAt": 1783420154421
+                },
+                {
+                  "id": "3cd7bba8-80b6-4c14-854e-727cae9691e3",
+                  "name": "暗潮终章漫画p6.jpg",
+                  "src": "images/p6.jpg-413b77ab6616.jpg",
+                  "caption": "",
+                  "createdAt": 1783420155418
+                }
+              ],
+              "createdAt": 1783420172500
+            }
+          ],
+          "illustrations": [
+            {
+              "id": "e862236c-f977-45c4-a215-1202d6f89188",
+              "name": "像素qq.png",
+              "src": "images/qq.png-617f1394a2a8.png",
+              "caption": "像素qq人",
+              "createdAt": 1783481601940
+            },
+            {
+              "id": "beb00906-a38d-4507-8e39-0b6af1ffb63f",
+              "name": "暗潮金钱树打卡.jpg",
+              "src": "images/.jpg-2dabfe24324b.jpg",
+              "caption": "“偷”金钱树",
+              "createdAt": 1783481571151
+            },
+            {
+              "id": "b0fc2ea2-a7c6-4479-8e7d-876750aa62ff",
+              "name": "暗潮秘书装打卡.jpg",
+              "src": "images/.jpg-101c4a6073db.jpg",
+              "caption": "秘书？",
+              "createdAt": 1783481554927
+            },
+            {
+              "id": "fb61ae5c-3659-45b5-9f8a-76ba0d694062",
+              "name": "暗潮女仆吴.jpg",
+              "src": "images/.jpg-01c1bc09655e.jpg",
+              "caption": "女仆？",
+              "createdAt": 1783481535314
+            },
+            {
+              "id": "85a6af25-9c7d-44fa-a376-c3108c691fee",
+              "name": "暗潮秘密罐头1.1.jpg",
+              "src": "images/1.1.jpg-a35fefd6109f.jpg",
+              "caption": "大罐头",
+              "createdAt": 1783481504292
+            },
+            {
+              "id": "d4d15065-a9a9-4a31-a72f-90e49dcf8a0c",
+              "name": "暗潮6个头.jpg",
+              "src": "images/6-.jpg-677777e2b952.jpg",
+              "caption": "初来乍到，寻找朋友",
+              "createdAt": 1783477130171
+            }
+          ],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "6d3d60c7-ab7e-4c01-af5d-b2d33fee8c76",
+                "linkedCharacterId": "34d70e16-bbca-49a9-a6a0-e354c086de09",
+                "name": "吴梓柠",
+                "type": "加利亚诺成员",
+                "color": "#167c80",
+                "image": "",
+                "x": 380,
+                "y": 78,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783493747459
+              },
+              {
+                "id": "b1f83cb9-c2cc-4e6c-8e09-636ec134d661",
+                "linkedCharacterId": "",
+                "name": "卡库亚",
+                "type": "禁军",
+                "color": "#919191",
+                "image": "",
+                "x": 552,
+                "y": 250,
+                "isSelf": false,
+                "createdAt": 1783422714551,
+                "updatedAt": 1783493790730
+              },
+              {
+                "id": "e1a1ff0b-eb9d-4dc7-9c7b-f0f6226ffb1b",
+                "linkedCharacterId": "",
+                "name": "卢切斯",
+                "type": "加利亚诺成员",
+                "color": "#fffc41",
+                "image": "",
+                "x": 380,
+                "y": 422,
+                "isSelf": false,
+                "createdAt": 1783420266693,
+                "updatedAt": 1783493810230
+              },
+              {
+                "id": "5f8cf07f-ff77-4e65-8420-89e5ffeecb22",
+                "linkedCharacterId": "",
+                "name": "Lancelot",
+                "type": "保镖？",
+                "color": "#f5ec00",
+                "image": "",
+                "x": 139.42446240761296,
+                "y": 147.116615582205,
+                "isSelf": false,
+                "createdAt": 1783420227599,
+                "updatedAt": 1783470921247
+              }
+            ],
+            "edges": [
+              {
+                "id": "00061b3e-f3e3-4421-8427-e4f9b0a03a29",
+                "from": "6d3d60c7-ab7e-4c01-af5d-b2d33fee8c76",
+                "to": "b1f83cb9-c2cc-4e6c-8e09-636ec134d661",
+                "label": "朋友",
+                "reverseLabel": "",
+                "note": "冷面帅哥",
+                "color": "#9aabba",
+                "direction": "none",
+                "lineStyle": "solid",
+                "createdAt": 1783422714551,
+                "updatedAt": 1783558768683
+              },
+              {
+                "id": "34996d01-5e3c-4cab-b8cf-fe94877a82b0",
+                "from": "6d3d60c7-ab7e-4c01-af5d-b2d33fee8c76",
+                "to": "e1a1ff0b-eb9d-4dc7-9c7b-f0f6226ffb1b",
+                "label": "挚友",
+                "reverseLabel": "挚友",
+                "note": "力气无比大的神奇女子一枚",
+                "color": "#9aabba",
+                "direction": "none",
+                "lineStyle": "solid",
+                "createdAt": 1783420266693,
+                "updatedAt": 1783558738406
+              },
+              {
+                "id": "741c0780-5365-4d45-8907-6129b8791cfe",
+                "from": "5f8cf07f-ff77-4e65-8420-89e5ffeecb22",
+                "to": "6d3d60c7-ab7e-4c01-af5d-b2d33fee8c76",
+                "label": "暗恋对象",
+                "reverseLabel": "多管闲事的保镖",
+                "note": "奇妙哦",
+                "color": "#e32400",
+                "direction": "both",
+                "lineStyle": "solid",
+                "createdAt": 1783420227599,
+                "updatedAt": 1783558693476
+              },
+              {
+                "id": "0ef032f8-7788-4e07-b3bb-e68c2f559e36",
+                "from": "e1a1ff0b-eb9d-4dc7-9c7b-f0f6226ffb1b",
+                "to": "b1f83cb9-c2cc-4e6c-8e09-636ec134d661",
+                "label": "朋友",
+                "reverseLabel": "",
+                "note": "没头脑与不高兴",
+                "color": "#9aabba",
+                "direction": "none",
+                "lineStyle": "solid",
+                "createdAt": 1783470860224,
+                "updatedAt": 1783558758501
+              }
+            ],
+            "view": {
+              "scale": 1,
+              "panX": 84.74820143884892,
+              "panY": 76.54848355403674
+            }
+          }
+        },
+        {
+          "id": "8e736061-0ca0-4ce9-b371-939571d03d69",
+          "createdAt": 1783401722284,
+          "updatedAt": 1783486349284,
+          "variantName": "西幻",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "ad4b82e7-a729-41e8-8a84-37185db324af",
+                "linkedCharacterId": "",
+                "name": "吴梓柠",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              },
+              {
+                "id": "b6eff724-dc7b-4c49-9b55-6f7eef990a12",
+                "linkedCharacterId": "",
+                "name": "卡库亚",
+                "type": "朋友",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783422714551,
+                "updatedAt": 1783422714551
+              },
+              {
+                "id": "c4c743f1-413f-4d77-b22a-685f2a3ee76c",
+                "linkedCharacterId": "",
+                "name": "卢切斯",
+                "type": "挚友",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783420266693,
+                "updatedAt": 1783420266693
+              },
+              {
+                "id": "77e64422-3d35-4ba0-8e78-9eafe7cde1ff",
+                "linkedCharacterId": "",
+                "name": "Lancelot",
+                "type": "保镖？",
+                "color": "#b23a62",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783420227599,
+                "updatedAt": 1783420227599
+              }
+            ],
+            "edges": [
+              {
+                "id": "00061b3e-f3e3-4421-8427-e4f9b0a03a29",
+                "from": "ad4b82e7-a729-41e8-8a84-37185db324af",
+                "to": "b6eff724-dc7b-4c49-9b55-6f7eef990a12",
+                "label": "朋友",
+                "reverseLabel": "",
+                "note": "冷面帅哥",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783422714551,
+                "updatedAt": 1783422714551
+              },
+              {
+                "id": "34996d01-5e3c-4cab-b8cf-fe94877a82b0",
+                "from": "ad4b82e7-a729-41e8-8a84-37185db324af",
+                "to": "c4c743f1-413f-4d77-b22a-685f2a3ee76c",
+                "label": "挚友",
+                "reverseLabel": "",
+                "note": "力气无比大的神奇女子一枚",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783420266693,
+                "updatedAt": 1783420266693
+              },
+              {
+                "id": "741c0780-5365-4d45-8907-6129b8791cfe",
+                "from": "ad4b82e7-a729-41e8-8a84-37185db324af",
+                "to": "77e64422-3d35-4ba0-8e78-9eafe7cde1ff",
+                "label": "保镖？",
+                "reverseLabel": "",
+                "note": "挚友与保镖，保护咱皇太子安全",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783420227599,
+                "updatedAt": 1783420227599
+              }
+            ],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        }
+      ],
+      "world": "",
+      "summary": "",
+      "age": "",
+      "species": "",
+      "pronouns": "",
+      "role": "",
+      "personality": "",
+      "appearance": "",
+      "backstory": "",
+      "relationships": "",
+      "notes": "",
+      "cover": "",
+      "images": []
+    },
+    {
+      "id": "44e572f2-17c4-459d-9928-c571ef8f9aea",
+      "createdAt": 1783485846365,
+      "updatedAt": 1783558595383,
+      "name": "Alaric Veyne 阿拉里克·维恩",
+      "status": "draft",
+      "tags": "",
+      "avatar": "images/Alaric-Veyne--avatar-00d0fed0be10.jpg",
+      "relationshipsNetwork": [],
+      "activeVariantId": "0ecc6e73-4008-4f73-a09a-68759a61d7c5",
+      "variants": [
+        {
+          "id": "0ecc6e73-4008-4f73-a09a-68759a61d7c5",
+          "createdAt": 1783485846365,
+          "updatedAt": 1783558595383,
+          "variantName": "主线",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/0ecc6e73-4008-4f73-a09a-68759a61d7c5-cover-954d1dea8dd3.jpg",
+          "images": [
+            {
+              "id": "ae191623-d1d6-4c65-b684-9f0a5b789cb6",
+              "name": "Alaric Veyne 阿拉里克·维恩.jpg",
+              "src": "images/0ecc6e73-4008-4f73-a09a-68759a61d7c5-cover-954d1dea8dd3.jpg",
+              "caption": "",
+              "createdAt": 1783485890642
+            }
+          ],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "7b1e8448-7a73-43de-b3ca-0d47ab9683e2",
+                "linkedCharacterId": "44e572f2-17c4-459d-9928-c571ef8f9aea",
+                "name": "Alaric Veyne 阿拉里克·维恩",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "isSelf": true,
+                "createdAt": 1783485846446,
+                "updatedAt": 1783485846446
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "8931f215-af72-4c87-9ef0-3e8b7b5f6265",
+      "createdAt": 1783484998125,
+      "updatedAt": 1783557301015,
+      "name": "麻花",
+      "status": "active",
+      "tags": "",
+      "avatar": "",
+      "relationshipsNetwork": [],
+      "activeVariantId": "50755d7d-92be-439f-b8c9-fff740d1a94b",
+      "variants": [
+        {
+          "id": "50755d7d-92be-439f-b8c9-fff740d1a94b",
+          "createdAt": 1783485412243,
+          "updatedAt": 1783485909701,
+          "variantName": "女团企",
+          "world": "不出道就会死",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/50755d7d-92be-439f-b8c9-fff740d1a94b-cover-54c450078f6b.jpg",
+          "images": [
+            {
+              "id": "5d058a9c-acfc-4a58-b619-fe68ff14e3bd",
+              "name": "不出道就会死 女团企.jpg",
+              "src": "images/50755d7d-92be-439f-b8c9-fff740d1a94b-cover-54c450078f6b.jpg",
+              "caption": "",
+              "createdAt": 1783485451633
+            }
+          ],
+          "timeline": [],
+          "comics": [
+            {
+              "id": "d6c47585-fb8e-41a7-b04c-8ad6e879025e",
+              "title": "二公",
+              "synopsis": "",
+              "pages": [
+                {
+                  "id": "50d20271-1933-4974-a117-c688638ff5af",
+                  "name": "不出道就会死二公服设.jpg",
+                  "src": "images/.jpg-c13ddebc7f8a.jpg",
+                  "caption": "",
+                  "createdAt": 1783485474070
+                },
+                {
+                  "id": "3702d94a-a0c1-4038-9ac7-b599b1e222e9",
+                  "name": "不出道就会死二公打卡.jpg",
+                  "src": "images/.jpg-a1583f8fe8cc.jpg",
+                  "caption": "",
+                  "createdAt": 1783485478908
+                }
+              ],
+              "createdAt": 1783485494727
+            }
+          ],
+          "illustrations": [
+            {
+              "id": "d9a74b40-bc20-49d4-b55c-66ebe63b5364",
+              "name": "不出道就会死 一公打卡1.jpg",
+              "src": "images/1.jpg-de0079bb964f.jpg",
+              "caption": "",
+              "createdAt": 1783485460829
+            }
+          ],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "2baf8cab-7967-4824-9a66-6f92b45cbbe6",
+                "linkedCharacterId": "",
+                "name": "麻花",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783485412303,
+                "updatedAt": 1783485412303
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "fccc18ff-242c-4044-9340-54b585f4df76",
+          "createdAt": 1783484998125,
+          "updatedAt": 1783485001900,
+          "variantName": "主线",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "1320fbf0-c850-4be4-8656-94c448acfc4c",
+                "linkedCharacterId": "",
+                "name": "麻花",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783484998216,
+                "updatedAt": 1783484998216
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "d256532f-64f6-4cce-9a98-5df675ef72a2",
+      "createdAt": 1783420497236,
+      "updatedAt": 1783557301015,
+      "name": "梦溪",
+      "status": "active",
+      "tags": "",
+      "avatar": "images/avatar-b30172841e6c.jpg",
+      "relationshipsNetwork": [],
+      "activeVariantId": "aff7816a-4447-4a8e-975c-98ea95b1e6be",
+      "variants": [
+        {
+          "id": "92e1acc8-0748-48ee-b3eb-53c6116b86de",
+          "createdAt": 1783482259222,
+          "updatedAt": 1783486002969,
+          "variantName": "杂图存档",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "be279024-39a7-415a-ae75-a5230fa8f251",
+                "linkedCharacterId": "",
+                "name": "梦溪",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783482259259,
+                "updatedAt": 1783482259259
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "e1577b30-ac06-4ede-b12a-8fa65c0aa064",
+          "createdAt": 1783420574585,
+          "updatedAt": 1783486039674,
+          "variantName": "恋企",
+          "world": "现代",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/e1577b30-ac06-4ede-b12a-8fa65c0aa064-cover-de9d5d534855.jpg",
+          "images": [
+            {
+              "id": "e44e2dfe-f090-4910-9127-673e4cda42c0",
+              "name": "恋爱选修课企卡.jpg",
+              "src": "images/e1577b30-ac06-4ede-b12a-8fa65c0aa064-cover-de9d5d534855.jpg",
+              "caption": "",
+              "createdAt": 1783482153529
+            }
+          ],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "26334d64-a473-4c1c-ba19-fd0fe1fc191c",
+                "linkedCharacterId": "",
+                "name": "梦溪",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "783ef185-439e-4eab-b60e-9798c9b08a69",
+          "createdAt": 1783420505982,
+          "updatedAt": 1783486041135,
+          "variantName": "原野秘话",
+          "world": "西幻探险",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/783ef185-439e-4eab-b60e-9798c9b08a69-cover-d3b303b52ede.jpg",
+          "images": [
+            {
+              "id": "6c0d9cd8-7935-47fd-bded-a703b8cad5c1",
+              "name": "原野秘话-梦溪（补充页.jpg",
+              "src": "images/.jpg-957870abacf3.jpg",
+              "caption": "",
+              "createdAt": 1783420594282
+            },
+            {
+              "id": "529993df-6e6b-4e2e-8f18-9d8aa923626b",
+              "name": "原野秘话-梦溪.jpg",
+              "src": "images/783ef185-439e-4eab-b60e-9798c9b08a69-cover-d3b303b52ede.jpg",
+              "caption": "",
+              "createdAt": 1783420590750
+            }
+          ],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [
+            {
+              "id": "d1272141-fc95-473b-b983-ca7b33b25574",
+              "name": "原野秘话6个头.jpg",
+              "src": "images/6-.jpg-aa4b10c31136.jpg",
+              "caption": "可爱的企u",
+              "createdAt": 1783485548910
+            },
+            {
+              "id": "ddfe9b04-ec98-467b-a14a-7dc426a5d6a3",
+              "name": "原野探险1.jpg",
+              "src": "images/1.jpg-9cb651d41ac8.jpg",
+              "caption": "水晶溶洞探险",
+              "createdAt": 1783485540582
+            }
+          ],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "33c927bb-ae8f-4861-bc1f-b3d5287ff7b3",
+                "linkedCharacterId": "",
+                "name": "梦溪",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              },
+              {
+                "id": "7ac2d373-6525-4f44-b4ef-7a5c6bb641bf",
+                "linkedCharacterId": "",
+                "name": "亚苏奎亚",
+                "type": "神秘术士",
+                "color": "#00a3d7",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": false,
+                "createdAt": 1783485682568,
+                "updatedAt": 1783485696064
+              }
+            ],
+            "edges": [
+              {
+                "id": "fda73605-f018-49d5-9bbe-3c4d830746e1",
+                "from": "33c927bb-ae8f-4861-bc1f-b3d5287ff7b3",
+                "to": "7ac2d373-6525-4f44-b4ef-7a5c6bb641bf",
+                "label": "队友",
+                "reverseLabel": "",
+                "note": "一位冷脸神秘女子，做饭难吃，但却是队伍里唯一会做饭的了，在日常生活中意外的好相处且靠谱",
+                "color": "#9aabba",
+                "direction": "forward",
+                "lineStyle": "solid",
+                "createdAt": 1783485811543,
+                "updatedAt": 1783485816852
+              }
+            ],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "aff7816a-4447-4a8e-975c-98ea95b1e6be",
+          "createdAt": 1783420497236,
+          "updatedAt": 1783486041974,
+          "variantName": "主线",
+          "world": "架空魔幻现实",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "9a9ce257-817d-4ab4-80ff-9c0413ee0fac",
+                "linkedCharacterId": "",
+                "name": "梦溪",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "e8ad8d00-ebbe-4964-9c06-b33f711eab50",
+      "createdAt": 1783420480248,
+      "updatedAt": 1783557301015,
+      "name": "Lancelot George Helios York",
+      "status": "active",
+      "tags": "",
+      "avatar": "images/Lancelot-George-Helios-York-avatar-c50c860e2c87.jpg",
+      "relationshipsNetwork": [],
+      "activeVariantId": "4c0ccb38-6708-4feb-8987-28686937db45",
+      "variants": [
+        {
+          "id": "656dbb61-a7d6-428a-a248-eb44f7ac8893",
+          "createdAt": 1783482103813,
+          "updatedAt": 1783482182629,
+          "variantName": "主线",
+          "world": "西幻",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "356cb316-782e-4fe7-b021-a92f02495daf",
+                "linkedCharacterId": "",
+                "name": "Lancelot",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783482103842,
+                "updatedAt": 1783482103842
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        },
+        {
+          "id": "4c0ccb38-6708-4feb-8987-28686937db45",
+          "createdAt": 1783420480248,
+          "updatedAt": 1783486307953,
+          "variantName": "黑手党",
+          "world": "架空近现代",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "兰",
+          "role": "百合科",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "images/4c0ccb38-6708-4feb-8987-28686937db45-cover-5d2b06a48759.jpg",
+          "images": [
+            {
+              "id": "1fbe1aff-64f9-423e-9b5c-9d2e76382ce8",
+              "name": "Lan（黑手党pa.jpg",
+              "src": "images/4c0ccb38-6708-4feb-8987-28686937db45-cover-5d2b06a48759.jpg",
+              "caption": "",
+              "createdAt": 1783420835520
+            }
+          ],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [
+            {
+              "id": "365df2af-be3f-47ce-b147-e90902256009",
+              "name": "文特里切利企划打卡1.jpg",
+              "src": "images/1.jpg-50a11fd85df3.jpg",
+              "caption": "",
+              "createdAt": 1783486079280
+            }
+          ],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "2b758293-3813-40cf-a422-4a5e0fc5b4c6",
+                "linkedCharacterId": "",
+                "name": "Lancelot",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783430226237,
+                "updatedAt": 1783430226237
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "22956363-be60-4fa4-b75f-182e29adddec",
+      "createdAt": 1783557290829,
+      "updatedAt": 1783557290830,
+      "name": "",
+      "status": "draft",
+      "tags": "",
+      "avatar": "",
+      "relationshipsNetwork": [],
+      "activeVariantId": "233adeb3-d8fb-44bb-a1d0-c38db5191dcd",
+      "variants": [
+        {
+          "id": "233adeb3-d8fb-44bb-a1d0-c38db5191dcd",
+          "createdAt": 1783557290829,
+          "updatedAt": 1783557290830,
+          "variantName": "主线",
+          "world": "",
+          "summary": "",
+          "age": "",
+          "species": "",
+          "pronouns": "",
+          "role": "",
+          "personality": "",
+          "appearance": "",
+          "backstory": "",
+          "detailedStory": "",
+          "relationships": "",
+          "notes": "",
+          "cover": "",
+          "images": [],
+          "timeline": [],
+          "comics": [],
+          "illustrations": [],
+          "relationshipsNetwork": {
+            "nodes": [
+              {
+                "id": "31b7cb1a-5d0d-41b3-88a0-0dea4d3e0c7d",
+                "linkedCharacterId": "",
+                "name": "当前OC",
+                "type": "当前OC",
+                "color": "#167c80",
+                "image": "",
+                "x": null,
+                "y": null,
+                "isSelf": true,
+                "createdAt": 1783557301478,
+                "updatedAt": 1783557301478
+              }
+            ],
+            "edges": [],
+            "view": {
+              "scale": 1,
+              "panX": 0,
+              "panY": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
