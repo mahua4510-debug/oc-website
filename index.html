@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OC资料库</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="OC列表">
+        <header class="brand-bar">
+          <div>
+            <p class="eyebrow">本地收藏</p>
+            <h1>OC资料库</h1>
+          </div>
+          <button id="newCharacterBtn" class="icon-button primary" type="button" title="新建OC" aria-label="新建OC">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </header>
+
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.7-4.7M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z"/></svg>
+          <input id="searchInput" type="search" placeholder="搜索名字、标签、世界观" autocomplete="off" />
+        </div>
+
+        <div class="filter-row" role="group" aria-label="状态筛选">
+          <button class="filter-chip active" type="button" data-filter="all">全部</button>
+          <button class="filter-chip" type="button" data-filter="draft">🌟</button>
+          <button class="filter-chip" type="button" data-filter="active">🌟🌟</button>
+          <button class="filter-chip" type="button" data-filter="archived">🌟🌟🌟</button>
+        </div>
+
+        <div id="characterList" class="character-list" aria-live="polite"></div>
+      </aside>
+
+      <main class="workspace">
+        <section id="emptyState" class="empty-state">
+          <div class="empty-art" aria-hidden="true">
+            <svg viewBox="0 0 280 220">
+              <rect x="42" y="34" width="152" height="132" rx="12" />
+              <path d="M68 69h98M68 97h74M68 125h58" />
+              <rect x="118" y="72" width="118" height="116" rx="16" />
+              <path d="M144 110c10-22 55-22 66 0M151 149h52" />
+              <circle cx="164" cy="126" r="6" />
+              <circle cx="192" cy="126" r="6" />
+            </svg>
+          </div>
+          <h2>开始整理你的 OC</h2>
+          <p>建立角色档案，保存设定、标签和图片。所有内容会留在这台电脑的浏览器里。</p>
+          <button id="emptyNewBtn" class="text-button primary" type="button">新建第一个OC</button>
+        </section>
+
+        <form id="editor" class="editor hidden" autocomplete="off">
+          <div class="topline">
+            <section class="profile-cover" aria-label="角色头像封面">
+              <button id="avatarButton" class="avatar-button" type="button" title="选择角色头像/封面" aria-label="选择角色头像/封面">
+                <img id="avatarImage" alt="角色头像" class="hidden" />
+                <span id="avatarPlaceholder">头像/封面</span>
+              </button>
+              <input id="avatarInput" type="file" accept="image/*" />
+              <button id="clearAvatarBtn" class="text-button subtle" type="button">清除头像</button>
+            </section>
+            <div class="title-fields">
+              <label class="field title-field">
+                <span>名字</span>
+                <input id="nameInput" name="name" type="text" placeholder="未命名OC" />
+              </label>
+              <div class="inline-fields">
+                <label class="field compact">
+                  <span>状态</span>
+                  <select id="statusInput" name="status">
+                    <option value="draft">🌟</option>
+                    <option value="active">🌟🌟</option>
+                    <option value="archived">🌟🌟🌟</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="toolbar" aria-label="资料操作">
+              <button id="undoBtn" class="icon-button" type="button" title="撤销最近修改" aria-label="撤销最近修改" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H4v5M5 11a7 7 0 1 0 2-5"/></svg>
+              </button>
+              <button id="shareBtn" class="icon-button" type="button" title="导出只读分享页" aria-label="导出只读分享页">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M12 4v11m0-11 4 4m-4-4-4 4"/></svg>
+              </button>
+              <button id="exportBtn" class="icon-button" type="button" title="导出备份" aria-label="导出备份">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+              </button>
+              <label class="icon-button file-button" title="导入备份" aria-label="导入备份">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V9m0 0 4 4m-4-4-4 4M4 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"/></svg>
+                <input id="importInput" type="file" accept="application/json" />
+              </label>
+              <button id="deleteBtn" class="icon-button danger" type="button" title="删除当前OC" aria-label="删除当前OC">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M9 7V4h6v3m-8 0 1 14h8l1-14"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <section class="variants-panel" aria-label="设定分支">
+            <div class="section-heading">
+              <h2>设定分支</h2>
+              <div class="variant-actions">
+                <button id="addVariantBtn" class="icon-button" type="button" title="新增分支" aria-label="新增分支">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                </button>
+                <button id="deleteVariantBtn" class="icon-button danger" type="button" title="删除当前分支" aria-label="删除当前分支">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6m4-6v6M9 7V4h6v3m-8 0 1 14h8l1-14"/></svg>
+                </button>
+              </div>
+            </div>
+            <div id="variantList" class="variant-list" aria-live="polite"></div>
+            <div class="field-grid">
+              <label class="field">
+                <span>分支名</span>
+                <input id="variantNameInput" name="variantName" type="text" placeholder="主线 / 现代AU / 幻想世界线" />
+              </label>
+              <label class="field">
+                <span>世界观</span>
+                <input id="worldInput" name="world" type="text" placeholder="所属故事 / 阵营 / 时代" />
+              </label>
+            </div>
+          </section>
+
+          <div class="editor-grid">
+            <section class="media-panel" aria-label="图片区">
+              <div id="coverDropzone" class="cover-dropzone" tabindex="0">
+                <img id="coverImage" alt="OC封面" class="hidden" />
+                <div id="coverPlaceholder" class="cover-placeholder">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 13l2.5-3 3.5 4.5 2-2.5 3 4M8 8h.01"/></svg>
+                  <span>上传封面或拖入图片</span>
+                </div>
+                <input id="coverInput" type="file" accept="image/*" />
+              </div>
+
+              <div class="upload-row">
+                <label class="text-button">
+                  添加图库图片
+                  <input id="galleryInput" type="file" accept="image/*" multiple />
+                </label>
+                <button id="clearCoverBtn" class="text-button subtle" type="button">清除封面</button>
+              </div>
+
+              <div id="galleryGrid" class="gallery-grid"></div>
+            </section>
+
+            <section class="details-panel" aria-label="文字设定">
+              <div class="section-heading">
+                <h2>设定资料</h2>
+                <p id="saveState">已保存</p>
+              </div>
+
+              <label class="field">
+                <span>一句话概念</span>
+                <textarea id="summaryInput" name="summary" rows="3" placeholder="这个分支里角色最核心的感觉、矛盾或身份"></textarea>
+              </label>
+
+              <label class="field">
+                <span>OC标签</span>
+                <input id="tagsInput" name="tags" type="text" placeholder="用逗号分隔，如：主角，机械义肢，雨城" />
+              </label>
+
+              <div class="field-grid">
+                <label class="field">
+                  <span>年龄 / 生日</span>
+                  <input id="ageInput" name="age" type="text" />
+                </label>
+                <label class="field">
+                  <span>种族 / 身份</span>
+                  <input id="speciesInput" name="species" type="text" />
+                </label>
+                <label class="field">
+                  <span>代称</span>
+                  <input id="pronounsInput" name="pronouns" type="text" />
+                </label>
+                <label class="field">
+                  <span>阵营 / 职业</span>
+                  <input id="roleInput" name="role" type="text" />
+                </label>
+              </div>
+
+              <div class="tabs" role="tablist" aria-label="设定分类">
+                <button class="tab-button active" type="button" data-tab="personality">性格</button>
+                <button class="tab-button" type="button" data-tab="appearance">外貌</button>
+                <button class="tab-button" type="button" data-tab="backstory">经历</button>
+                <button class="tab-button" type="button" data-tab="detailedStory">详细故事</button>
+                <button class="tab-button" type="button" data-tab="relationships">关系</button>
+                <button class="tab-button" type="button" data-tab="notes">杂项</button>
+              </div>
+
+              <div class="tab-panels">
+                <label class="field tab-panel active" data-panel="personality">
+                  <span>性格与行为习惯</span>
+                  <textarea id="personalityInput" name="personality" rows="9"></textarea>
+                </label>
+                <label class="field tab-panel" data-panel="appearance">
+                  <span>外貌、服装与常用道具</span>
+                  <textarea id="appearanceInput" name="appearance" rows="9"></textarea>
+                </label>
+                <label class="field tab-panel" data-panel="backstory">
+                  <span>过往经历与关键事件</span>
+                  <textarea id="backstoryInput" name="backstory" rows="9"></textarea>
+                </label>
+                <label class="field tab-panel" data-panel="detailedStory">
+                  <span>详细故事正文</span>
+                  <textarea id="detailedStoryInput" name="detailedStory" rows="14" placeholder="可以放完整剧情、章节梗概、时间线细节或长篇片段"></textarea>
+                </label>
+                <label class="field tab-panel" data-panel="relationships">
+                  <span>人际关系</span>
+                  <textarea id="relationshipsInput" name="relationships" rows="9"></textarea>
+                </label>
+                <label class="field tab-panel" data-panel="notes">
+                  <span>灵感、待补充、禁忌点</span>
+                  <textarea id="notesInput" name="notes" rows="9"></textarea>
+                </label>
+              </div>
+            </section>
+          </div>
+
+          <section class="timeline-panel" aria-label="时间轴">
+            <div class="section-heading">
+              <h2>时间轴</h2>
+              <p>记录当前世界观中的年代、章节或关键事件</p>
+            </div>
+            <div class="timeline-editor">
+              <div class="field-grid">
+                <label class="field">
+                  <span>时间 / 年份 / 时期</span>
+                  <input id="timelineEraInput" type="text" placeholder="如：建国前 12 年 / 第一章 / 雨季末" />
+                </label>
+                <label class="field">
+                  <span>事件标题</span>
+                  <input id="timelineTitleInput" type="text" placeholder="事件名称或章节节点" />
+                </label>
+                <label class="field">
+                  <span>类型</span>
+                  <input id="timelineTypeInput" type="text" placeholder="历史 / 私人 / 战争 / 转折 / 文学意象" />
+                </label>
+                <label class="field color-field">
+                  <span>标记颜色</span>
+                  <input id="timelineColorInput" type="color" value="#167c80" />
+                </label>
+              </div>
+              <label class="field">
+                <span>事件说明</span>
+                <textarea id="timelineDescriptionInput" rows="4" placeholder="可以写事件经过、因果、角色受到的影响，或这一时期的文学/历史感"></textarea>
+              </label>
+              <div class="field timeline-link-field">
+                <span>关联插图 / 漫画</span>
+                <div id="timelineLinkList" class="timeline-link-list"></div>
+              </div>
+              <div class="comic-form-actions">
+                <button id="addTimelineBtn" class="text-button primary" type="button">添加事件</button>
+                <button id="cancelTimelineEditBtn" class="text-button subtle" type="button">取消编辑</button>
+              </div>
+            </div>
+            <div id="timelineList" class="timeline-list"></div>
+          </section>
+
+          <section class="network-panel" aria-label="角色关系网">
+            <div class="section-heading">
+              <h2>关系网</h2>
+              <p>当前设定分支独立保存，可自主添加节点与连线</p>
+            </div>
+            <div class="network-grid">
+              <div class="network-canvas-panel">
+                <div class="network-tools" aria-label="关系网视图控制">
+                  <button id="networkZoomOutBtn" class="icon-button mini" type="button" title="缩小" aria-label="缩小">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+                  </button>
+                  <button id="networkZoomInBtn" class="icon-button mini" type="button" title="放大" aria-label="放大">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                  </button>
+                  <button id="networkResetViewBtn" class="text-button subtle" type="button">重置视图</button>
+                  <button id="networkResetLayoutBtn" class="text-button subtle" type="button">重置布局</button>
+                  <button id="networkAutoLayoutBtn" class="text-button" type="button">自动整理</button>
+                </div>
+                <div id="networkCanvas" class="network-canvas" aria-live="polite"></div>
+              </div>
+              <div class="network-editor">
+                <div class="network-form-block">
+                  <h3>节点</h3>
+                  <div class="existing-character-row">
+                    <label class="field">
+                      <span>直接添加已有角色</span>
+                      <select id="existingCharacterInput"></select>
+                    </label>
+                    <button id="addExistingCharacterNodeBtn" class="text-button" type="button">添加已有角色</button>
+                  </div>
+                  <div class="field-grid relation-fields">
+                    <label class="field">
+                      <span>名称</span>
+                      <input id="nodeNameInput" type="text" placeholder="角色 / 组织 / 地点" />
+                    </label>
+                    <label class="field">
+                      <span>类型</span>
+                      <input id="nodeTypeInput" type="text" placeholder="盟友 / 阵营 / 地点" />
+                    </label>
+                  </div>
+                  <label class="field color-field">
+                    <span>节点颜色</span>
+                    <input id="nodeColorInput" type="color" value="#b23a62" />
+                  </label>
+                  <div class="node-image-row">
+                    <label class="text-button file-button">
+                      选择角色外貌
+                      <input id="nodeImageInput" type="file" accept="image/*" />
+                    </label>
+                    <button id="clearNodeImageBtn" class="text-button subtle" type="button">清除外貌</button>
+                    <span id="nodeImagePreview" class="node-image-preview" aria-label="角色外貌预览"></span>
+                  </div>
+                  <button id="addNodeBtn" class="text-button primary" type="button">添加节点</button>
+                </div>
+
+                <div class="network-form-block">
+                  <h3>连线</h3>
+                  <div class="field-grid relation-fields">
+                    <label class="field">
+                      <span>起点</span>
+                      <select id="edgeFromInput"></select>
+                    </label>
+                    <label class="field">
+                      <span>终点</span>
+                      <select id="edgeToInput"></select>
+                    </label>
+                  </div>
+                  <label class="field">
+                    <span>关系</span>
+                    <input id="edgeLabelInput" type="text" placeholder="挚友 / 宿敌 / 家人 / 契约" />
+                  </label>
+                  <label class="field">
+                    <span>反向关系</span>
+                    <input id="edgeReverseLabelInput" type="text" placeholder="双向时显示在另一段箭头上，可留空" />
+                  </label>
+                  <label class="field">
+                    <span>补充说明</span>
+                    <textarea id="edgeNoteInput" rows="3" placeholder="这条连线背后的事件、矛盾或变化"></textarea>
+                  </label>
+                  <label class="field color-field">
+                    <span>线条颜色</span>
+                    <input id="edgeColorInput" type="color" value="#9aabba" />
+                  </label>
+                  <div class="field-grid relation-fields">
+                    <label class="field">
+                      <span>箭头朝向</span>
+                      <select id="edgeDirectionInput">
+                        <option value="forward">起点 → 终点</option>
+                        <option value="backward">终点 → 起点</option>
+                        <option value="both">双向</option>
+                        <option value="none">无箭头</option>
+                      </select>
+                    </label>
+                    <label class="field">
+                      <span>线条样式</span>
+                      <select id="edgeLineStyleInput">
+                        <option value="solid">实线</option>
+                        <option value="dashed">虚线</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="comic-form-actions">
+                    <button id="addEdgeBtn" class="text-button primary" type="button">添加连线</button>
+                    <button id="cancelNetworkEditBtn" class="text-button subtle" type="button">取消编辑</button>
+                  </div>
+                </div>
+
+                <div id="relationshipList" class="relationship-list"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="comics-panel" aria-label="漫画模块">
+            <div class="section-heading">
+              <h2>漫画</h2>
+              <p>保存分镜、条漫或漫画页</p>
+            </div>
+            <div class="comic-editor">
+              <div class="field-grid">
+                <label class="field">
+                  <span>漫画标题</span>
+                  <input id="comicTitleInput" type="text" placeholder="章节名 / 短篇标题" />
+                </label>
+                <label class="field file-field">
+                  <span>漫画图片</span>
+                  <span class="text-button">选择多页图片</span>
+                  <input id="comicPagesInput" type="file" accept="image/*" multiple />
+                </label>
+              </div>
+              <label class="field">
+                <span>剧情简介</span>
+                <textarea id="comicSynopsisInput" rows="4" placeholder="这段漫画讲了什么、发生在哪个时间点、有哪些关键情绪"></textarea>
+              </label>
+              <div id="comicDropzone" class="comic-dropzone" tabindex="0">
+                <span>拖入漫画图片，或点击“选择多页图片”</span>
+              </div>
+              <div id="comicDraftPages" class="comic-draft-pages" aria-live="polite"></div>
+              <div class="comic-form-actions">
+                <button id="addComicBtn" class="text-button primary" type="button">添加漫画</button>
+                <button id="cancelComicEditBtn" class="text-button subtle" type="button">取消编辑</button>
+              </div>
+            </div>
+            <div id="comicList" class="comic-list"></div>
+          </section>
+
+          <section class="illustrations-panel" aria-label="插图模块">
+            <div class="section-heading">
+              <h2>插图</h2>
+              <p>保存当前分支的单张插图、气氛图或补充图</p>
+            </div>
+            <div class="upload-row">
+              <label class="text-button">
+                添加插图
+                <input id="illustrationInput" type="file" accept="image/*" multiple />
+              </label>
+            </div>
+            <div id="illustrationDropzone" class="illustration-dropzone" tabindex="0">
+              <span>拖入插图图片，或点击“添加插图”</span>
+            </div>
+            <div id="illustrationGrid" class="gallery-grid illustration-grid"></div>
+          </section>
+        </form>
+      </main>
+    </div>
+
+    <template id="characterCardTemplate">
+      <button class="character-card" type="button">
+        <span class="thumb"></span>
+        <span class="card-text">
+          <strong></strong>
+          <small></small>
+        </span>
+      </button>
+    </template>
+
+    <template id="galleryItemTemplate">
+      <figure class="gallery-item">
+        <div class="image-frame">
+          <button class="image-preview" type="button" title="大图浏览" aria-label="大图浏览">
+            <img alt="图库图片" />
+          </button>
+          <figcaption class="image-actions">
+            <button class="icon-button mini set-cover" type="button" title="设为封面" aria-label="设为封面">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg>
+            </button>
+            <button class="icon-button mini danger remove-image" type="button" title="删除图片" aria-label="删除图片">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M10 11v6m4-6v6M9 7V4h6v3m-8 0 1 14h8l1-14"/></svg>
+            </button>
+          </figcaption>
+        </div>
+        <input class="image-caption-input" type="text" placeholder="图片介绍" aria-label="图片介绍" />
+      </figure>
+    </template>
+
+    <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="大图浏览">
+      <button id="lightboxClose" class="icon-button lightbox-close" type="button" title="关闭" aria-label="关闭">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <button id="lightboxPrev" class="icon-button lightbox-nav lightbox-prev" type="button" title="上一张" aria-label="上一张">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <button id="lightboxNext" class="icon-button lightbox-nav lightbox-next" type="button" title="下一张" aria-label="下一张">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <figure class="lightbox-content">
+        <img id="lightboxImage" alt="大图预览" />
+        <figcaption>
+          <strong id="lightboxTitle"></strong>
+          <p id="lightboxDescription"></p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div id="avatarCropper" class="avatar-cropper hidden" role="dialog" aria-modal="true" aria-label="选择头像区域">
+      <section class="avatar-cropper-panel">
+        <div class="section-heading">
+          <h2 id="avatarCropTitle">选择图片区域</h2>
+          <button id="avatarCropCancel" class="icon-button" type="button" title="取消" aria-label="取消">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div id="avatarCropStage" class="avatar-crop-stage" aria-label="拖动图片调整头像区域">
+          <img id="avatarCropImage" alt="头像取景图片" draggable="false" />
+          <div class="avatar-crop-mask" aria-hidden="true"></div>
+        </div>
+        <label class="crop-slider">
+          <span>缩放</span>
+          <input id="avatarCropZoom" type="range" min="1" max="3" step="0.01" value="1" />
+        </label>
+        <div class="crop-actions">
+          <button id="avatarCropConfirm" class="text-button primary" type="button">保存图片</button>
+          <button id="avatarCropCancelSecondary" class="text-button subtle" type="button">取消</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
