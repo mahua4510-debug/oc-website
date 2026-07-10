@@ -701,6 +701,45 @@ h2 {
   align-items: center;
 }
 
+.network-zoom-value {
+  min-width: 48px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 720;
+  text-align: center;
+}
+
+.network-expand-button {
+  margin-left: auto;
+}
+
+body.network-canvas-expanded {
+  overflow: hidden;
+}
+
+.network-canvas-panel.expanded {
+  position: fixed;
+  inset: 16px;
+  z-index: 60;
+  grid-template-rows: auto minmax(0, 1fr);
+  padding: 14px;
+  border: var(--module-border-width) solid var(--module-border);
+  border-radius: var(--module-radius);
+  background: var(--module-bg);
+  backdrop-filter: blur(var(--module-blur));
+  box-shadow: 0 24px 80px rgba(31, 37, 48, 0.24);
+}
+
+.network-canvas-panel.expanded .network-canvas {
+  min-height: 0;
+  height: 100%;
+}
+
+.network-canvas-panel.expanded .network-canvas svg {
+  height: 100%;
+  max-height: none;
+}
+
 .network-canvas {
   display: grid;
   place-items: center;

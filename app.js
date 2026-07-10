@@ -25,6 +25,8 @@ const state = {
   networkMenuPoint: null,
   pendingNetworkNodePosition: null,
   networkGesture: null,
+  networkViewSaveTimer: null,
+  networkCanvasHome: null,
   networkSuppressClick: false,
   decorationDrag: null,
   selectedDecorationStickerId: null,
@@ -126,9 +128,12 @@ const els = {
   moduleBlurInput: document.querySelector("#moduleBlurInput"),
   globalBackgroundLayer: document.querySelector("#globalBackgroundLayer"),
   globalStickerLayer: document.querySelector("#globalStickerLayer"),
+  networkCanvasPanel: document.querySelector(".network-canvas-panel"),
   networkCanvas: document.querySelector("#networkCanvas"),
   networkZoomOutBtn: document.querySelector("#networkZoomOutBtn"),
   networkZoomInBtn: document.querySelector("#networkZoomInBtn"),
+  networkZoomValue: document.querySelector("#networkZoomValue"),
+  networkExpandBtn: document.querySelector("#networkExpandBtn"),
   networkResetViewBtn: document.querySelector("#networkResetViewBtn"),
   networkResetLayoutBtn: document.querySelector("#networkResetLayoutBtn"),
   networkAutoLayoutBtn: document.querySelector("#networkAutoLayoutBtn"),
@@ -2067,6 +2072,26 @@ function getNetworkViewBox(layout, network) {
   };
 }
 
+function updateNetworkZoomValue(network) {
+  if (!els.networkZoomValue) return;
+  els.networkZoomValue.textContent = `${Math.round(getNetworkView(network).scale * 100)}%`;
+}
+
+function applyNetworkViewport(svg, network) {
+  if (!svg) return;
+  const viewBox = getNetworkViewBox(getNetworkLayout(network), network);
+  svg.setAttribute("viewBox", `${viewBox.x} ${viewBox.y} ${viewBox.width} ${viewBox.height}`);
+  updateNetworkZoomValue(network);
+}
+
+function scheduleNetworkViewSave(character) {
+  clearTimeout(state.networkViewSaveTimer);
+  state.networkViewSaveTimer = window.setTimeout(() => {
+    state.networkViewSaveTimer = null;
+    saveCharacter(character);
+  }, 180);
+}
+
 function getNetworkLayout(network) {
   const width = 760;
   const height = 500;
@@ -2385,20 +2410,9 @@ function renderRelationshipCanvas(character, network) {
     </svg>
   `;
   const svg = els.networkCanvas.querySelector("svg");
+  updateNetworkZoomValue(network);
   svg?.addEventListener("pointerdown", startNetworkPan);
   svg?.addEventListener("dblclick", openNetworkQuickMenu);
-  svg?.addEventListener("wheel", handleNetworkWheel, { passive: false, capture: true });
-  svg?.addEventListener("mousewheel", handleNetworkWheel, { passive: false, capture: true });
-  els.networkCanvas.removeEventListener("wheel", handleNetworkWheel, { capture: true });
-  els.networkCanvas.removeEventListener("mousewheel", handleNetworkWheel, { capture: true });
-  els.networkCanvas.addEventListener("wheel", handleNetworkWheel, { passive: false, capture: true });
-  els.networkCanvas.addEventListener("mousewheel", handleNetworkWheel, { passive: false, capture: true });
-  els.networkCanvas.removeEventListener("gesturestart", handleNetworkGestureStart);
-  els.networkCanvas.removeEventListener("gesturechange", handleNetworkGestureChange);
-  els.networkCanvas.removeEventListener("gestureend", handleNetworkGestureEnd);
-  els.networkCanvas.addEventListener("gesturestart", handleNetworkGestureStart, { passive: false });
-  els.networkCanvas.addEventListener("gesturechange", handleNetworkGestureChange, { passive: false });
-  els.networkCanvas.addEventListener("gestureend", handleNetworkGestureEnd);
   els.networkCanvas.querySelectorAll(".network-node").forEach((nodeElement) => {
     nodeElement.addEventListener("pointerdown", (event) => startNetworkNodeDrag(event, nodeElement.dataset.nodeId, network));
     nodeElement.addEventListener("click", () => openNetworkNode(nodeElement.dataset.nodeId, network));
@@ -2502,21 +2516,25 @@ function zoomNetworkAtClient(svg, network, clientX, clientY, nextScale) {
 }
 
 function networkWheelDelta(event) {
-  const deltaY = Number(event.deltaY);
-  if (Number.isFinite(deltaY) && deltaY !== 0) return deltaY;
-  const wheelDelta = Number(event.wheelDelta);
-  if (Number.isFinite(wheelDelta) && wheelDelta !== 0) return -wheelDelta;
-  const detail = Number(event.detail);
-  if (Number.isFinite(detail) && detail !== 0) return detail * 16;
-  return 0;
+  let delta = Number(event.deltaY);
+  if (!Number.isFinite(delta) || delta === 0) {
+    const wheelDelta = Number(event.wheelDelta);
+    if (Number.isFinite(wheelDelta) && wheelDelta !== 0) delta = -wheelDelta;
+  }
+  if (!Number.isFinite(delta) || delta === 0) {
+    const detail = Number(event.detail);
+    if (Number.isFinite(detail) && detail !== 0) delta = detail;
+  }
+  if (!Number.isFinite(delta) || delta === 0) return 0;
+  if (event.deltaMode === 1) delta *= 16;
+  if (event.deltaMode === 2) delta *= 500;
+  return delta;
 }
 
 function handleNetworkWheel(event) {
-  if (event.__networkZoomHandled) return;
   const character = getActiveCharacter();
   const variant = getActiveVariant(character);
   if (!character || !variant) return;
-  event.__networkZoomHandled = true;
   const network = getVariantNetwork(character, variant);
   const view = getNetworkView(network);
   const svg = els.networkCanvas.querySelector("svg");
@@ -2529,29 +2547,16 @@ function handleNetworkWheel(event) {
   hideNetworkQuickMenu();
   const delta = networkWheelDelta(event);
   if (!delta) return;
-  const factor = Math.exp(-delta * 0.0018);
+  const factor = Math.exp(-delta * (event.ctrlKey ? 0.008 : 0.003));
   zoomNetworkAtClient(svg, network, clientX, clientY, view.scale * factor);
-  saveCharacter(character);
-  renderRelationshipCanvas(character, network);
-}
-
-function isEventInsideNetworkCanvas(event) {
-  if (!els.networkCanvas || els.networkCanvas.offsetParent === null) return false;
-  const rect = els.networkCanvas.getBoundingClientRect();
-  return event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
-}
-
-function handleNetworkDocumentWheel(event) {
-  if (!isEventInsideNetworkCanvas(event)) return;
-  handleNetworkWheel(event);
+  applyNetworkViewport(svg, network);
+  scheduleNetworkViewSave(character);
 }
 
 function handleNetworkGestureStart(event) {
-  if (event.__networkZoomHandled) return;
   const character = getActiveCharacter();
   const variant = getActiveVariant(character);
   if (!character || !variant) return;
-  event.__networkZoomHandled = true;
   event.preventDefault();
   event.stopPropagation();
   const view = getNetworkView(getVariantNetwork(character, variant));
@@ -2559,11 +2564,9 @@ function handleNetworkGestureStart(event) {
 }
 
 function handleNetworkGestureChange(event) {
-  if (event.__networkZoomHandled) return;
   const character = getActiveCharacter();
   const variant = getActiveVariant(character);
   if (!character || !variant || !state.networkGesture) return;
-  event.__networkZoomHandled = true;
   const network = getVariantNetwork(character, variant);
   const svg = els.networkCanvas.querySelector("svg");
   if (!svg) return;
@@ -2575,27 +2578,35 @@ function handleNetworkGestureChange(event) {
   event.stopPropagation();
   hideNetworkQuickMenu();
   zoomNetworkAtClient(svg, network, clientX, clientY, state.networkGesture.startScale * scale);
-  saveCharacter(character);
-  renderRelationshipCanvas(character, network);
+  applyNetworkViewport(svg, network);
+  scheduleNetworkViewSave(character);
 }
 
 function handleNetworkGestureEnd() {
   state.networkGesture = null;
 }
 
-function handleNetworkDocumentGestureStart(event) {
-  if (!isEventInsideNetworkCanvas(event)) return;
-  handleNetworkGestureStart(event);
-}
-
-function handleNetworkDocumentGestureChange(event) {
-  if (!isEventInsideNetworkCanvas(event)) return;
-  handleNetworkGestureChange(event);
-}
-
-function handleNetworkDocumentGestureEnd(event) {
-  if (!state.networkGesture && !isEventInsideNetworkCanvas(event)) return;
-  handleNetworkGestureEnd(event);
+function toggleNetworkCanvasExpanded() {
+  const expanded = !els.networkCanvasPanel.classList.contains("expanded");
+  if (expanded) {
+    state.networkCanvasHome = {
+      parent: els.networkCanvasPanel.parentNode,
+      nextSibling: els.networkCanvasPanel.nextSibling,
+    };
+    document.body.append(els.networkCanvasPanel);
+  }
+  els.networkCanvasPanel.classList.toggle("expanded", expanded);
+  document.body.classList.toggle("network-canvas-expanded", expanded);
+  els.networkExpandBtn.setAttribute("aria-pressed", String(expanded));
+  els.networkExpandBtn.textContent = expanded ? "退出展开" : "展开画布";
+  if (!expanded && state.networkCanvasHome?.parent) {
+    state.networkCanvasHome.parent.insertBefore(els.networkCanvasPanel, state.networkCanvasHome.nextSibling);
+    state.networkCanvasHome = null;
+  }
+  const character = getActiveCharacter();
+  const variant = getActiveVariant(character);
+  const network = getVariantNetwork(character, variant);
+  window.requestAnimationFrame(() => applyNetworkViewport(els.networkCanvas.querySelector("svg"), network));
 }
 
 function networkPointFromEvent(event, svg) {
@@ -2751,7 +2762,7 @@ function moveNetworkNode(event) {
     const distance = Math.hypot(pointers[0].x - pointers[1].x, pointers[0].y - pointers[1].y) || drag.startDistance;
     if (Math.abs(distance - drag.startDistance) > 4) drag.moved = true;
     zoomNetworkAtClient(svg, network, drag.centerClientX, drag.centerClientY, drag.startScale * (distance / drag.startDistance));
-    renderRelationshipCanvas(character, network);
+    applyNetworkViewport(svg, network);
     return;
   }
   if (drag.type === "pan") {
@@ -2763,7 +2774,7 @@ function moveNetworkNode(event) {
     }
     view.panX = clamp(drag.startPanX + dx, -1000, 1000);
     view.panY = clamp(drag.startPanY + dy, -1000, 1000);
-    renderRelationshipCanvas(character, network);
+    applyNetworkViewport(els.networkCanvas.querySelector("svg"), network);
     return;
   }
   if (drag.type === "connect") {
@@ -3683,8 +3694,6 @@ function buildShareHtml(payload) {
     <aside class="sidebar">
       <header class="share-header">
         <div><p class="eyebrow">只读分享</p><h1>OC资料库</h1></div>
-        <button id="copyShareLink" class="copy-link" type="button">复制只读链接</button>
-        <p id="shareLinkNote" class="share-note"></p>
       </header>
       <input id="search" class="search" type="search" placeholder="搜索名字、标签、世界观" />
       <div id="list" class="list"></div>
@@ -3756,7 +3765,7 @@ function buildShareHtml(payload) {
       function moveLightbox(direction){if(state.lightboxItems.length<=1)return;setLightbox(state.lightboxIndex+direction);}
       function openLightbox(src,title,description,items,index){state.lightboxItems=Array.isArray(items)&&items.length?items:[{src:src,title:title,description:description}];state.lightboxIndex=Math.min(Math.max(index||0,0),state.lightboxItems.length-1);setLightbox(state.lightboxIndex);lightbox.classList.remove("hidden");}
       function closeLightbox(){lightbox.classList.add("hidden");lightboxImage.removeAttribute("src");state.lightboxItems=[];state.lightboxIndex=0;state.lightboxStartX=null;}
-      search.addEventListener("input",function(){state.query=search.value;renderList();});copyShareLink.addEventListener("click",copyReadOnlyLink);updateShareLinkState();document.getElementById("lightboxClose").addEventListener("click",closeLightbox);lightboxPrev.addEventListener("click",function(){moveLightbox(-1);});lightboxNext.addEventListener("click",function(){moveLightbox(1);});lightboxImage.addEventListener("pointerdown",function(event){state.lightboxStartX=event.clientX;});lightboxImage.addEventListener("pointerup",function(event){if(state.lightboxStartX===null)return;var delta=event.clientX-state.lightboxStartX;state.lightboxStartX=null;if(Math.abs(delta)<44)return;moveLightbox(delta>0?-1:1);});lightbox.addEventListener("click",function(event){if(event.target===lightbox)closeLightbox();});window.addEventListener("resize",function(){renderDecorations(activeVariant(activeCharacter()));});document.addEventListener("keydown",function(event){if(lightbox.classList.contains("hidden"))return;if(event.key==="Escape")closeLightbox();if(event.key==="ArrowLeft"){event.preventDefault();moveLightbox(-1);}if(event.key==="ArrowRight"){event.preventDefault();moveLightbox(1);}});render();
+      search.addEventListener("input",function(){state.query=search.value;renderList();});if(copyShareLink){copyShareLink.addEventListener("click",copyReadOnlyLink);updateShareLinkState();}document.getElementById("lightboxClose").addEventListener("click",closeLightbox);lightboxPrev.addEventListener("click",function(){moveLightbox(-1);});lightboxNext.addEventListener("click",function(){moveLightbox(1);});lightboxImage.addEventListener("pointerdown",function(event){state.lightboxStartX=event.clientX;});lightboxImage.addEventListener("pointerup",function(event){if(state.lightboxStartX===null)return;var delta=event.clientX-state.lightboxStartX;state.lightboxStartX=null;if(Math.abs(delta)<44)return;moveLightbox(delta>0?-1:1);});lightbox.addEventListener("click",function(event){if(event.target===lightbox)closeLightbox();});window.addEventListener("resize",function(){renderDecorations(activeVariant(activeCharacter()));});document.addEventListener("keydown",function(event){if(lightbox.classList.contains("hidden"))return;if(event.key==="Escape")closeLightbox();if(event.key==="ArrowLeft"){event.preventDefault();moveLightbox(-1);}if(event.key==="ArrowRight"){event.preventDefault();moveLightbox(1);}});render();
     })();
   </script>
 </body>
@@ -3842,13 +3851,10 @@ function wireEvents() {
   document.addEventListener("pointermove", moveNetworkNode);
   document.addEventListener("pointerup", finishNetworkNodeDrag);
   document.addEventListener("pointercancel", finishNetworkNodeDrag);
-  window.addEventListener("wheel", handleNetworkDocumentWheel, { passive: false, capture: true });
-  window.addEventListener("mousewheel", handleNetworkDocumentWheel, { passive: false, capture: true });
-  document.addEventListener("wheel", handleNetworkDocumentWheel, { passive: false, capture: true });
-  document.addEventListener("mousewheel", handleNetworkDocumentWheel, { passive: false, capture: true });
-  document.addEventListener("gesturestart", handleNetworkDocumentGestureStart, { passive: false, capture: true });
-  document.addEventListener("gesturechange", handleNetworkDocumentGestureChange, { passive: false, capture: true });
-  document.addEventListener("gestureend", handleNetworkDocumentGestureEnd, { capture: true });
+  els.networkCanvas.addEventListener("wheel", handleNetworkWheel, { passive: false, capture: true });
+  els.networkCanvas.addEventListener("gesturestart", handleNetworkGestureStart, { passive: false, capture: true });
+  els.networkCanvas.addEventListener("gesturechange", handleNetworkGestureChange, { passive: false, capture: true });
+  els.networkCanvas.addEventListener("gestureend", handleNetworkGestureEnd, { capture: true });
   document.addEventListener("pointermove", moveDecorationSticker);
   document.addEventListener("pointerup", finishDecorationStickerDrag);
   document.addEventListener("pointercancel", finishDecorationStickerDrag);
@@ -3869,6 +3875,7 @@ function wireEvents() {
   });
   els.networkZoomOutBtn.addEventListener("click", () => zoomNetwork(0.85));
   els.networkZoomInBtn.addEventListener("click", () => zoomNetwork(1.18));
+  els.networkExpandBtn.addEventListener("click", toggleNetworkCanvasExpanded);
   els.networkResetViewBtn.addEventListener("click", resetNetworkView);
   els.networkResetLayoutBtn.addEventListener("click", resetNetworkLayout);
   els.networkAutoLayoutBtn.addEventListener("click", autoArrangeNetwork);
@@ -3916,6 +3923,11 @@ function wireEvents() {
     if (!els.networkQuickMenu || els.networkQuickMenu.classList.contains("hidden")) return;
     if (event.target.closest("#networkQuickMenu") || event.target.closest("#networkCanvas")) return;
     hideNetworkQuickMenu();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && els.networkCanvasPanel.classList.contains("expanded")) {
+      toggleNetworkCanvasExpanded();
+    }
   });
   els.addComicBtn.addEventListener("click", addComic);
   els.cancelComicEditBtn.addEventListener("click", () => {
