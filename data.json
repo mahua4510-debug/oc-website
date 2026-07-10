@@ -1,12 +1,12 @@
 {
   "app": "OC资料库分享页",
   "version": 1,
-  "exportedAt": "2026-07-09T03:59:24.352Z",
+  "exportedAt": "2026-07-10T03:10:45.324Z",
   "characters": [
     {
       "id": "34d70e16-bbca-49a9-a6a0-e354c086de09",
       "createdAt": 1783401722284,
-      "updatedAt": 1783558891158,
+      "updatedAt": 1783644553517,
       "name": "吴梓柠",
       "status": "archived",
       "tags": "薮猫面具",
@@ -74,6 +74,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -83,8 +101,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783482699721,
                 "updatedAt": 1783482699721
@@ -120,6 +138,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -129,8 +165,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783482288375,
                 "updatedAt": 1783482288375
@@ -166,6 +202,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -175,8 +229,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -425,6 +479,24 @@
               "createdAt": 1783483112148
             }
           ],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -434,8 +506,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -447,8 +519,8 @@
                 "type": "二公队友",
                 "color": "#c4bc00",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783482842683,
                 "updatedAt": 1783482852729
@@ -514,6 +586,24 @@
               "createdAt": 1783482362884
             }
           ],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -523,8 +613,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -536,8 +626,8 @@
                 "type": "前乐队队友",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783482432082,
                 "updatedAt": 1783482432082
@@ -549,8 +639,8 @@
                 "type": "前乐队队长",
                 "color": "#f5ec00",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783482541722,
                 "updatedAt": 1783482541722
@@ -607,7 +697,7 @@
         {
           "id": "aee67a6e-9d72-4799-a001-471e721c1675",
           "createdAt": 1783420288064,
-          "updatedAt": 1783484301292,
+          "updatedAt": 1783644552151,
           "variantName": "ABO",
           "world": "",
           "summary": "",
@@ -626,17 +716,35 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
                 "id": "4854f5a9-5019-4f6d-b3d1-4e8a3c2ef5ba",
-                "linkedCharacterId": "",
+                "linkedCharacterId": "34d70e16-bbca-49a9-a6a0-e354c086de09",
                 "name": "吴梓柠",
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -648,8 +756,8 @@
                 "type": "朋友",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783422714551,
                 "updatedAt": 1783422714551
@@ -661,8 +769,8 @@
                 "type": "挚友",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783420266693,
                 "updatedAt": 1783420266693
@@ -674,8 +782,8 @@
                 "type": "保镖？",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783420227599,
                 "updatedAt": 1783420227599
@@ -732,7 +840,7 @@
         {
           "id": "ff8176c2-e24c-44f0-aa18-dce78322aa44",
           "createdAt": 1783403599047,
-          "updatedAt": 1783558891158,
+          "updatedAt": 1783644553517,
           "variantName": "暗潮企划",
           "world": "黑手党",
           "summary": "名字：朱利亚诺·徳诺姆布拉",
@@ -1034,6 +1142,28 @@
               "createdAt": 1783477130171
             }
           ],
+          "decorations": {
+            "background": {
+              "name": "暗潮秘书装打卡3.jpg",
+              "src": "images/3.jpg-07b3175cf0e6.jpg",
+              "createdAt": 1783644367936
+            },
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.66,
+            "backgroundBlur": 2,
+            "overlayOpacity": 0.29,
+            "moduleStyle": {
+              "backgroundColor": "#ecdaea",
+              "backgroundOpacity": 0.6,
+              "borderColor": "#7b75bc",
+              "borderOpacity": 1,
+              "borderWidth": 2,
+              "radius": 9,
+              "shadow": 0.35,
+              "blur": 7
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1172,6 +1302,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1181,8 +1329,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -1194,8 +1342,8 @@
                 "type": "朋友",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783422714551,
                 "updatedAt": 1783422714551
@@ -1207,8 +1355,8 @@
                 "type": "挚友",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783420266693,
                 "updatedAt": 1783420266693
@@ -1220,8 +1368,8 @@
                 "type": "保镖？",
                 "color": "#b23a62",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783420227599,
                 "updatedAt": 1783420227599
@@ -1293,7 +1441,7 @@
     {
       "id": "44e572f2-17c4-459d-9928-c571ef8f9aea",
       "createdAt": 1783485846365,
-      "updatedAt": 1783558595383,
+      "updatedAt": 1783644241306,
       "name": "Alaric Veyne 阿拉里克·维恩",
       "status": "draft",
       "tags": "",
@@ -1331,6 +1479,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1360,7 +1526,7 @@
     {
       "id": "8931f215-af72-4c87-9ef0-3e8b7b5f6265",
       "createdAt": 1783484998125,
-      "updatedAt": 1783557301015,
+      "updatedAt": 1783644241306,
       "name": "麻花",
       "status": "active",
       "tags": "",
@@ -1429,6 +1595,24 @@
               "createdAt": 1783485460829
             }
           ],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1438,8 +1622,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783485412303,
                 "updatedAt": 1783485412303
@@ -1475,6 +1659,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1484,8 +1686,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783484998216,
                 "updatedAt": 1783484998216
@@ -1504,7 +1706,7 @@
     {
       "id": "d256532f-64f6-4cce-9a98-5df675ef72a2",
       "createdAt": 1783420497236,
-      "updatedAt": 1783557301015,
+      "updatedAt": 1783644241306,
       "name": "梦溪",
       "status": "active",
       "tags": "",
@@ -1534,6 +1736,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1543,8 +1763,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783482259259,
                 "updatedAt": 1783482259259
@@ -1588,6 +1808,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1597,8 +1835,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -1664,6 +1902,24 @@
               "createdAt": 1783485540582
             }
           ],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1673,8 +1929,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -1686,8 +1942,8 @@
                 "type": "神秘术士",
                 "color": "#00a3d7",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": false,
                 "createdAt": 1783485682568,
                 "updatedAt": 1783485696064
@@ -1737,6 +1993,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1746,8 +2020,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
@@ -1766,7 +2040,7 @@
     {
       "id": "e8ad8d00-ebbe-4964-9c06-b33f711eab50",
       "createdAt": 1783420480248,
-      "updatedAt": 1783557301015,
+      "updatedAt": 1783644241306,
       "name": "Lancelot George Helios York",
       "status": "active",
       "tags": "",
@@ -1796,6 +2070,24 @@
           "timeline": [],
           "comics": [],
           "illustrations": [],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1805,8 +2097,8 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783482103842,
                 "updatedAt": 1783482103842
@@ -1858,6 +2150,24 @@
               "createdAt": 1783486079280
             }
           ],
+          "decorations": {
+            "background": null,
+            "backgroundFit": "cover",
+            "backgroundOpacity": 0.45,
+            "backgroundBlur": 0,
+            "overlayOpacity": 0.28,
+            "moduleStyle": {
+              "backgroundColor": "#ffffff",
+              "backgroundOpacity": 0.96,
+              "borderColor": "#dce3ea",
+              "borderOpacity": 1,
+              "borderWidth": 1,
+              "radius": 8,
+              "shadow": 0.11,
+              "blur": 0
+            },
+            "stickers": []
+          },
           "relationshipsNetwork": {
             "nodes": [
               {
@@ -1867,70 +2177,11 @@
                 "type": "当前OC",
                 "color": "#167c80",
                 "image": "",
-                "x": null,
-                "y": null,
+                "x": 0,
+                "y": 0,
                 "isSelf": true,
                 "createdAt": 1783430226237,
                 "updatedAt": 1783430226237
-              }
-            ],
-            "edges": [],
-            "view": {
-              "scale": 1,
-              "panX": 0,
-              "panY": 0
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "22956363-be60-4fa4-b75f-182e29adddec",
-      "createdAt": 1783557290829,
-      "updatedAt": 1783557290830,
-      "name": "",
-      "status": "draft",
-      "tags": "",
-      "avatar": "",
-      "relationshipsNetwork": [],
-      "activeVariantId": "233adeb3-d8fb-44bb-a1d0-c38db5191dcd",
-      "variants": [
-        {
-          "id": "233adeb3-d8fb-44bb-a1d0-c38db5191dcd",
-          "createdAt": 1783557290829,
-          "updatedAt": 1783557290830,
-          "variantName": "主线",
-          "world": "",
-          "summary": "",
-          "age": "",
-          "species": "",
-          "pronouns": "",
-          "role": "",
-          "personality": "",
-          "appearance": "",
-          "backstory": "",
-          "detailedStory": "",
-          "relationships": "",
-          "notes": "",
-          "cover": "",
-          "images": [],
-          "timeline": [],
-          "comics": [],
-          "illustrations": [],
-          "relationshipsNetwork": {
-            "nodes": [
-              {
-                "id": "31b7cb1a-5d0d-41b3-88a0-0dea4d3e0c7d",
-                "linkedCharacterId": "",
-                "name": "当前OC",
-                "type": "当前OC",
-                "color": "#167c80",
-                "image": "",
-                "x": null,
-                "y": null,
-                "isSelf": true,
-                "createdAt": 1783557301478,
-                "updatedAt": 1783557301478
               }
             ],
             "edges": [],

@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app-shell">
+    <div id="globalBackgroundLayer" class="global-background-layer" aria-hidden="true">
+      <div class="global-background-image"></div>
+      <div class="global-background-overlay"></div>
+    </div>
+    <div class="app-shell content-layer">
       <aside class="sidebar" aria-label="OC列表">
         <header class="brand-bar">
           <div>
@@ -119,6 +123,119 @@
                 <span>世界观</span>
                 <input id="worldInput" name="world" type="text" placeholder="所属故事 / 阵营 / 时代" />
               </label>
+            </div>
+          </section>
+
+          <section class="decoration-panel" aria-label="页面装饰">
+            <div class="section-heading">
+              <h2>页面装饰</h2>
+              <p>当前设定分支独立保存，分享页会按这里的布置显示</p>
+            </div>
+            <div class="decoration-grid">
+              <div class="decoration-settings">
+                <div class="decoration-block">
+                  <h3>背景</h3>
+                  <div class="upload-row">
+                    <label class="text-button">
+                      上传背景
+                      <input id="decorationBackgroundInput" type="file" accept="image/*" />
+                    </label>
+                    <button id="clearDecorationBackgroundBtn" class="text-button subtle" type="button">清除背景</button>
+                  </div>
+                  <div class="field-grid decoration-fields">
+                    <label class="field">
+                      <span>显示方式</span>
+                      <select id="decorationBackgroundFitInput">
+                        <option value="cover">铺满</option>
+                        <option value="contain">完整显示</option>
+                        <option value="repeat">重复纹理</option>
+                        <option value="stretch">拉伸</option>
+                      </select>
+                    </label>
+                    <label class="field">
+                      <span>背景透明度</span>
+                      <input id="decorationBackgroundOpacityInput" type="range" min="0.15" max="1" step="0.01" value="0.45" />
+                    </label>
+                    <label class="field">
+                      <span>背景模糊</span>
+                      <input id="decorationBackgroundBlurInput" type="range" min="0" max="12" step="1" value="0" />
+                    </label>
+                    <label class="field">
+                      <span>浅色遮罩</span>
+                      <input id="decorationOverlayInput" type="range" min="0" max="0.85" step="0.01" value="0.28" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="decoration-block">
+                  <h3>贴纸</h3>
+                  <div class="upload-row">
+                    <label class="text-button">
+                      上传贴纸
+                      <input id="decorationStickerInput" type="file" accept="image/*" multiple />
+                    </label>
+                    <button id="duplicateDecorationStickerBtn" class="text-button subtle" type="button">复制</button>
+                    <button id="deleteDecorationStickerBtn" class="text-button subtle danger" type="button">删除</button>
+                  </div>
+                  <div class="field-grid decoration-fields">
+                    <label class="field">
+                      <span>大小</span>
+                      <input id="decorationStickerSizeInput" type="range" min="6" max="70" step="1" value="18" />
+                    </label>
+                    <label class="field">
+                      <span>旋转</span>
+                      <input id="decorationStickerRotationInput" type="range" min="-180" max="180" step="1" value="0" />
+                    </label>
+                    <label class="field">
+                      <span>透明度</span>
+                      <input id="decorationStickerOpacityInput" type="range" min="0.1" max="1" step="0.01" value="1" />
+                    </label>
+                    <div class="decoration-layer-actions">
+                      <button id="decorationStickerBackwardBtn" class="text-button subtle" type="button">下移</button>
+                      <button id="decorationStickerForwardBtn" class="text-button subtle" type="button">上移</button>
+                    </div>
+                  </div>
+                  <div id="decorationStickerList" class="decoration-sticker-list"></div>
+                </div>
+
+                <div class="decoration-block">
+                  <h3>模块样式</h3>
+                  <div class="field-grid decoration-fields">
+                    <label class="field color-field">
+                      <span>模块背景颜色</span>
+                      <input id="moduleBackgroundColorInput" type="color" value="#ffffff" />
+                    </label>
+                    <label class="field">
+                      <span>模块背景透明度</span>
+                      <input id="moduleBackgroundOpacityInput" type="range" min="0.15" max="1" step="0.01" value="0.96" />
+                    </label>
+                    <label class="field color-field">
+                      <span>模块边框颜色</span>
+                      <input id="moduleBorderColorInput" type="color" value="#dce3ea" />
+                    </label>
+                    <label class="field">
+                      <span>模块边框透明度</span>
+                      <input id="moduleBorderOpacityInput" type="range" min="0.25" max="1" step="0.01" value="1" />
+                    </label>
+                    <label class="field">
+                      <span>模块边框粗细</span>
+                      <input id="moduleBorderWidthInput" type="range" min="1" max="4" step="1" value="1" />
+                    </label>
+                    <label class="field">
+                      <span>模块圆角</span>
+                      <input id="moduleRadiusInput" type="range" min="0" max="24" step="1" value="8" />
+                    </label>
+                    <label class="field">
+                      <span>模块阴影强度</span>
+                      <input id="moduleShadowInput" type="range" min="0" max="1" step="0.01" value="0.11" />
+                    </label>
+                    <label class="field">
+                      <span>玻璃模糊程度</span>
+                      <input id="moduleBlurInput" type="range" min="0" max="24" step="1" value="0" />
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -276,6 +393,14 @@
                   <button id="networkAutoLayoutBtn" class="text-button" type="button">自动整理</button>
                 </div>
                 <div id="networkCanvas" class="network-canvas" aria-live="polite"></div>
+                <div id="networkQuickMenu" class="network-quick-menu hidden" role="menu" aria-label="关系网快捷添加">
+                  <button id="networkCreateNodeBtn" type="button" role="menuitem">新建角色节点</button>
+                  <label>
+                    <span>选择已有角色</span>
+                    <select id="networkQuickExistingInput"></select>
+                  </label>
+                  <button id="networkAddExistingBtn" type="button" role="menuitem">添加已有角色</button>
+                </div>
               </div>
               <div class="network-editor">
                 <div class="network-form-block">
@@ -351,13 +476,35 @@
                       </select>
                     </label>
                     <label class="field">
+                      <span>线条粗细</span>
+                      <input id="edgeWidthInput" type="range" min="1.5" max="7" step="0.5" value="2.5" />
+                    </label>
+                  </div>
+                  <div class="field-grid relation-fields">
+                    <label class="field">
                       <span>线条样式</span>
                       <select id="edgeLineStyleInput">
                         <option value="solid">实线</option>
                         <option value="dashed">虚线</option>
                       </select>
                     </label>
+                    <label class="field">
+                      <span>线条形态</span>
+                      <select id="edgeShapeInput">
+                        <option value="straight">直线</option>
+                        <option value="curve">曲线</option>
+                        <option value="elbow">折线</option>
+                      </select>
+                    </label>
                   </div>
+                  <label class="field">
+                    <span>箭头样式</span>
+                    <select id="edgeArrowStyleInput">
+                      <option value="triangle">实心箭头</option>
+                      <option value="chevron">线框箭头</option>
+                      <option value="dot">圆点箭头</option>
+                    </select>
+                  </label>
                   <div class="comic-form-actions">
                     <button id="addEdgeBtn" class="text-button primary" type="button">添加连线</button>
                     <button id="cancelNetworkEditBtn" class="text-button subtle" type="button">取消编辑</button>
@@ -421,6 +568,7 @@
         </form>
       </main>
     </div>
+    <div id="globalStickerLayer" class="global-sticker-layer" aria-label="全局贴纸层"></div>
 
     <template id="characterCardTemplate">
       <button class="character-card" type="button">
